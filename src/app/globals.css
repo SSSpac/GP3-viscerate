@@ -94,3 +94,14 @@ html {
     font-size: 16px;
   }
 }
+
+.main-content {
+    background-color:var(--foreground);    
+    height: 30rem;          
+    width: 100%; 
+    color: white;           
+    border-radius: 0.5rem;        
+    display: flex;                
+    align-items: center;          
+    justify-content: center;      
+}
