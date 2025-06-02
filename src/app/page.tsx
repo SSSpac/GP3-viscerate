@@ -1,7 +1,12 @@
-
-
+import Hpheader from '@/components/hp-header';
 export default function Home() {
   return (
-<h1>Hi</h1>
-)
+
+  <div>
+    <Hpheader />
+
+  </div>
+  );
+
+
 }
