@@ -1,5 +1,5 @@
 import ScrollDownButton from "../../components/ScrollDownButton";
-import FrameWrapper from "../../components/UI/FrameWrapper";
+import FrameWrapper from "../../components/FrameWrapper";
 
 const GamePage = () => {
   return (
@@ -21,7 +21,6 @@ const GamePage = () => {
           “even more text placeholder”
         </h4>
       </div>
-
       <div className="absolute -bottom-20 md:-bottom-18 left-1/2 transform -translate-x-1/2 z-10">
         <ScrollDownButton text="Scroll for more info" navigateTo="content" />
       </div>

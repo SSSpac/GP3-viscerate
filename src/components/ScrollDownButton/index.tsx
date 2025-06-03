@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ScrollDownButtonType } from "../types/globals";
+import { ScrollDownButtonType } from "../../types/globals";
 
 const ScrollDownButton = ({ text, navigateTo }: ScrollDownButtonType) => {
   return (
