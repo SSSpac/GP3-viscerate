@@ -4,6 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* add more colors as wish */
 :root {
   --background:#000D15 ;
   --foreground:#13222D ;
@@ -16,7 +17,7 @@ html {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-extraground: var(--extraground);
-  --color-logo: var(--logocolor);
+  --color-logocolor: var(--logocolor);
   --color-base: var(--textcolor);
   --font-aboreto: var(--font-aboreto);
   --font-newrocker: var(--font-newrocker);

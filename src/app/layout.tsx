@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${aboreto.variable} ${newRocker.variable} ${rubikDirt.variable} ${inter.variable} antialiased`}>
+      <body className={`${aboreto.variable} ${newRocker.variable} ${rubikDirt.variable} ${inter.variable}`}>
         {children}
       </body>
     </html>
