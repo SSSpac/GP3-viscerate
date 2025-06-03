@@ -1,0 +1,45 @@
+.header {
+  background: var(--background);
+  color: #ffffff;
+  padding: 20px;
+  font-weight: 10;
+  text-align: right;
+  opacity: 100%;
+  letter-spacing: 0.1px;
+  position: relative;
+  height: 80px
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.main-wrapper {
+  margin-top: 80px;
+  flex: 1;
+}
+
+.link {
+  position: relative;
+  right: 111px;
+  font-family: 'Aboreto';
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+     height: 60px;
+  }
+
+  .link {
+    right: 20px;
+    font-size: 16px;
+  }
+}
