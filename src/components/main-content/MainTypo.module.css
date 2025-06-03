@@ -1,0 +1,35 @@
+.p {
+    color: dimgray;
+    font-family: 'Rubik Dirt', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2.6;
+    margin-bottom: 1rem;
+    padding: 20px;
+ margin-top: 100px;}
+
+.h2 {
+    color: #7C691C;
+    color: transparent 50%;
+      text-shadow: 2px 2px 4px #000, 0 0 8px rgba(40, 28, 9, 0.5);
+    -webkit-text-fill-color: #7C691C;
+    stroke: rgb(0, 0, 0);
+    font-family: 'Rubik Dirt', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+     margin-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .p {
+        margin-top: 80px;
+        padding: 15px;
+    }
+    
+    .h2 {
+        margin-top: 60px; 
+    }
+}

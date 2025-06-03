@@ -1,27 +1,12 @@
 import Hpheader from '@/components/hp-header';
+import MainContent from '@/components/main-content/MainContent';
+
 export default function Home() {
   return (
-
-  <div>
-    <Hpheader />
-
-    <main className="container">
-          <div className="main-content">
-            <p className="main-picture">Main concept art</p>
-          </div>
-
-        <div className="buttons">
-          <button className="dowload-button text-white">
-            DOWNLOAD GAME
-          </button>
-          <button className="learn-more-button text-white">
-            LEARN MORE
-          </button>
-        </div>
+    <div>
+      <Hpheader />
       
-    </main>
-  </div>
+      <MainContent />
+    </div>
   );
-
-
 }
