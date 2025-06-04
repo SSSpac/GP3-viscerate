@@ -9,7 +9,7 @@ export default function Home() {
         {features.slice(0, 2).map((feature, index) => (
           <div
             key={index}
-            className="max-w-md mx-auto "
+            className="max-w-md mx-auto"
           >
             <GameCard title={feature.title} imageSrc={feature.imageSrc} />
           </div>
