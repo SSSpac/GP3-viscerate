@@ -1,5 +1,5 @@
 import GameCard from "../components/GameCard";
-import { features } from "../types/globals";
+import { features } from "@/data/data";
 
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
         {features.slice(0, 2).map((feature, index) => (
           <div
             key={index}
-            className="max-w-md mx-auto"
+            className="max-w-md mx-auto "
           >
             <GameCard title={feature.title} imageSrc={feature.imageSrc} />
           </div>

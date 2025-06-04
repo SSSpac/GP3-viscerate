@@ -1,11 +1,7 @@
 'use client'
 
 import Image from "next/image";
-
-type GameCardProps = {
-  title: string;
-  imageSrc: string;
-};
+import { GameCardProps } from "@/types/globals"
 
 const GameCard = ({ title, imageSrc }: GameCardProps) => {
   return (
