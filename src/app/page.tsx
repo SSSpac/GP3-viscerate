@@ -1,24 +1,24 @@
-import GameCard from "../components/GameCard";
-import { features } from "@/data/data";
-
+import GameCard from '@/components/GameCard';
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center min-h-screen bg-[var(--backgroundColor)]">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 max-w-6xl mx-auto p-40px">
-        {features.slice(0, 2).map((feature, index) => (
-          <div
-            key={index}
-            className="max-w-md mx-auto "
-          >
-            <GameCard title={feature.title} imageSrc={feature.imageSrc} />
-          </div>
-        ))}
-      <div className="col-span-1 md:col-span-2 flex justify-center">
-        <div className="max-w-md mx-auto space-y-10">
-          <GameCard title={features[2].title} imageSrc={features[2].imageSrc} />
-        </div>
-        </div>
+    <main className="bg-[var(--background)] min-h-screen flex flex-col items-center justify-center py-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <GameCard
+          imageSrc="/images/GM-example1.jpg"
+          title="Game mechanic example1"
+        />
+        <GameCard
+          imageSrc="/images/GM-example2.jpg"
+          title="Game mechanic example2"
+        />
+      </div>
+
+      <div className="mt-6">
+        <GameCard
+          imageSrc="/images/GM-example3.jpg"
+          title="Game mechanic example3"
+        />
       </div>
     </main>
   );

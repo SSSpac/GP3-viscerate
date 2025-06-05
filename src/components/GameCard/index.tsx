@@ -1,23 +1,24 @@
-'use client'
+import Image from 'next/image';
+import { GameMechanicCardProps } from "@/types/globals";
 
-import Image from "next/image";
-import { GameCardProps } from "@/types/globals"
-
-const GameCard = ({ title, imageSrc }: GameCardProps) => {
+const GameCard: React.FC<GameMechanicCardProps> = ({ title, imageSrc, alt }) => {
   return (
-    <div className="flex flex-col overflow-hidden max-w-sm mx-auto h-[288px] w-[513px] ">
-      <div className="relative w-full h-1/2">
-        <Image
-          src={imageSrc}
-          alt={title}
-          fill
-          className="object-cover "
-          sizes="(max-width:768px) 100vw, 400px"
-          priority
-        />
-      </div>
-      <div className="h-1/2 flex items-center justify-center p-2 text-center text-white">
-        <h3 className="text-lg font-semibold font-serif tracking-wide">"{title}"</h3>
+    <div className="p-4 w-full flex justify-center">
+      <div className="w-full max-w-[513px]">
+       
+        <div className="relative w-full h-[180px] md:h-[288px] md:w-[513px] mx-auto">
+          <Image
+            src={imageSrc}
+            alt={alt || title || "Game mechanic example"}
+            fill
+            priority
+            className="object-cover rounded-md"
+            sizes="(min-width: 768px) 513px, 100vw"
+          />
+        </div>
+        <p className="mt-6 text-[var(--extraground)] font-inter text-center md:text-[38px] flex flex-col space-y-2  w-full sm:text-[24px] md:w-[513px] mx-auto">
+          “{title}”
+        </p>
       </div>
     </div>
   );
