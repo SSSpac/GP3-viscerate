@@ -1,37 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=New+Rocker&family=Rubik+Dirt&display=swap');
 @import "tailwindcss";
- 
-* {
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
-   
- } 
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* add more colors as wish */
 :root {
   --background:#000D15 ;
   --foreground:#13222D ;
   --extraground: #CBC6BA;
   --logocolor: #7C691C;
+  --textcolor: white;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-extraground: var(--extraground);
+  --color-logocolor: var(--logocolor);
+  --color-base: var(--textcolor);
+  --font-aboreto: var(--font-aboreto);
+  --font-newrocker: var(--font-newrocker);
+  --font-rubikdirt: var(--font-rubikdirt);
+  --font-inter: var(--font-inter);
 }
 
-
-
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--textcolor);
   display:flex;
   background-color: var(--background);
   flex-direction: column;
-  min-height: 100vh;
-}
-
-html {
-  background-color: var(--background);
 }
