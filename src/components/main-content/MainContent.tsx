@@ -1,5 +1,4 @@
 'use client';
-
 import React from 'react';
 import Image from 'next/image';
 import ImageButton from './ImageButton';
@@ -7,35 +6,33 @@ import ImageButton from './ImageButton';
 const MainContent = () => {
   return (
     <main className="bg-[#13222D] min-h-screen flex flex-col items-center justify-center">
-      <section className="w-90% flex justify-center items-center  mb-50">
-        <Image 
-          src="/icons/VISCERATE.png"
-          alt="VISCERATE"
-          width={250}
-          height={150}
-          className="flex justify-between w-[90%] max-w-[400px] h-auto mb-16 hover:opacity-90 transition-opacity duration-300 ease-in-out"
-        />
-      </section>
-      
-      <div className="flex justify-center items-center gap--50 w-auto max-w-[900px] -mr-50">
+    <section className="w-90% flex justify-center items-center pt-[180px] mb-15">
+  <Image 
+    src="/icons/VISCERATE.png"
+    alt="VISCERATE"
+    width={250}
+    height={140}
+    priority
+    className="flex justify-between w-[90%] max-w-[400px] h-auto hover:opacity-90 transition-opacity"
+  />
+</section>
+
+      <div className="flex justify-center items-center gap--50 w-auto max-w-[900px] ">
         <ImageButton
           src="/icons/new.download-now.png"
           alt="Download Game"
           href="https://namatakahashi.itch.io/oo"
-    width={350} 
-    height={90} 
-          
+          width={350} 
+          height={90} 
+          onClick={() => {}} 
         />
-        
+
         <ImageButton
           src="/icons/new.learn-more.png"
           alt="Learn More"
-          href ="google.com"
-    width={250}  
-    height={60} 
-              className="w-[90%] max-w-[500px] h-auto mb-16"
-  className="mr-50"
-
+          href="google.com"
+          width={250}
+          height={60} onClick={undefined}          
         />
       </div>
 
