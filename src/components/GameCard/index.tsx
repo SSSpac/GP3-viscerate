@@ -16,7 +16,7 @@ const GameCard: React.FC<GameMechanicCardProps> = ({ title, imageSrc, alt }) => 
             sizes="(min-width: 768px) 513px, 100vw"
           />
         </div>
-        <p className="mt-6 text-[var(--extraground)] font-inter text-center md:text-[38px] flex flex-col space-y-2  w-full sm:text-[24px] md:w-[513px] mx-auto">
+        <p className="mt-6 text-[var(--extraground)] font-inter text-center w-full md:text-[38px] sm:text-[24px] md:w-[513px] mx-auto">
           “{title}”
         </p>
       </div>
