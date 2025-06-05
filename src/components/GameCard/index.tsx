@@ -5,7 +5,7 @@ import { GameCardProps } from "@/types/globals"
 
 const GameCard = ({ title, imageSrc }: GameCardProps) => {
   return (
-    <div className="flex flex-col overflow-hidden max-w-sm mx-auto h-[288px] w-[513] ">
+    <div className="flex flex-col overflow-hidden max-w-sm mx-auto h-[288px] w-[513px] ">
       <div className="relative w-full h-1/2">
         <Image
           src={imageSrc}

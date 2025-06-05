@@ -5,7 +5,7 @@ import { features } from "@/data/data";
 export default function Home() {
   return (
     <main className="flex justify-center items-center min-h-screen bg-[var(--backgroundColor)]">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 max-w-6xl mx-auto p-40px">
         {features.slice(0, 2).map((feature, index) => (
           <div
             key={index}
@@ -15,7 +15,7 @@ export default function Home() {
           </div>
         ))}
       <div className="col-span-1 md:col-span-2 flex justify-center">
-        <div className="max-w-md mx-auto ">
+        <div className="max-w-md mx-auto space-y-10">
           <GameCard title={features[2].title} imageSrc={features[2].imageSrc} />
         </div>
         </div>
