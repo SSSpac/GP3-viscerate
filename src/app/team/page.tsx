@@ -1,5 +1,5 @@
 import React from 'react'
-import { teamMembers } from '../../../public/data/teamMembers';
+import { teamMembers } from '../../data/teamMembers';
 import { TeamMember } from '@/types/globals';
 
 
