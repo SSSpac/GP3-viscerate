@@ -22,7 +22,7 @@ const MainContent = () => {
           src="/icons/new.download-now.png"
           alt="Download Game"
           href="https://namatakahashi.itch.io/oo"
-          width={350} 
+          width={250} 
           height={90} 
           onClick={() => {}} 
         />
