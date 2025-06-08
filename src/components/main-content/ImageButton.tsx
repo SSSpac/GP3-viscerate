@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 interface ImageButtonProps {
-  src: string;
+  src: any;
   alt: string;
   href: string;
   width: number;
