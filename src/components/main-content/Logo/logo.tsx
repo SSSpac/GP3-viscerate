@@ -8,13 +8,13 @@ interface LogoLinkProps {
   height?: number;
 }
 
-const LogoLink = ({ src, alt, href, width = 1050, height = 60 }: LogoLinkProps) => {
+const LogoLink: React.FC<LogoLinkProps> = ({ src, alt, href, width = 1050, height = 60 }) => {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className=" hover:-translate-y-1 transition-all duration-300 ease-in-out cursor-pointer"
+      className="hover:-translate-y-1 transition-all duration-300 ease-in-out cursor-pointer"
     >
       <Image
         src={src}
@@ -22,7 +22,6 @@ const LogoLink = ({ src, alt, href, width = 1050, height = 60 }: LogoLinkProps) 
         width={width}
         height={height}
         className="w-[800px] h-[60px] object-contain hover:opacity-90"
-        
       />
     </a>
   );
