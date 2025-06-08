@@ -10,7 +10,7 @@ interface ImageButtonProps {
   onClick?: () => void;
 }
 
-const ImageButton = ({ src, alt, href, width, height, onClick }: ImageButtonProps) => {
+const ImageButton: React.FC<ImageButtonProps> = ({ src, alt, href, width, height, onClick }) => {
   return (
     <Link href={href}>
       <Image
