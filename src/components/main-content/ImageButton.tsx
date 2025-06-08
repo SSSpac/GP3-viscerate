@@ -2,15 +2,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 interface ImageButtonProps {
-  src: any;
+  src: string;
   alt: string;
   href: string;
   width: number;
   height: number;
   onClick?: () => void;
+  className?: string;
 }
 
-const ImageButton: React.FC<ImageButtonProps> = ({ src, alt, href, width, height, onClick }) => {
+const ImageButton: React.FC<ImageButtonProps> = 
+({ src, alt, href, width, height, onClick }) => {
   return (
     <Link href={href}>
       <Image
@@ -19,7 +21,7 @@ const ImageButton: React.FC<ImageButtonProps> = ({ src, alt, href, width, height
         width={width}
         height={height}
         onClick={onClick}
-        className="hover:opacity-80 transition-opacity cursor-pointer"
+       
       />
     </Link>
   )
