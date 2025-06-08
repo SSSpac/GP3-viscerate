@@ -8,7 +8,7 @@ interface LogoLinkProps {
   height?: number;
 }
 
-const LogoLink = ({ src, alt, href, width = 1050, height = 60 }) => {
+const LogoLink = ({ src, alt, href, width = 1050, height = 60 }: LogoLinkProps) => {
   return (
     <a
       href={href}
@@ -28,4 +28,4 @@ const LogoLink = ({ src, alt, href, width = 1050, height = 60 }) => {
   );
 };
 
-export default ImageLink;
+export default LogoLink;
