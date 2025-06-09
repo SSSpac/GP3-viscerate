@@ -3,5 +3,7 @@ export type LinkItem = {
   text:string;
 };
 
-
-
+export type ScrollDownButtonType = {
+  text: string,
+  navigateTo: string
+}
