@@ -1,3 +1,5 @@
+import SubHeader from "@/components/SubHeader";
+
 export default function Home() {
   return (
     <h1 className="text-logocolor font-aboreto">
@@ -12,6 +14,7 @@ export default function Home() {
       Explicabo voluptate, veritatis eveniet odio dolor modi eius ducimus cum
       odit itaque ab, temporibus iusto at labore non eum praesentium mollitia?
       Saepe minus praesentium laboriosam!
+     
     </h1>
   );
 }

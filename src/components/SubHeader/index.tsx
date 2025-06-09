@@ -1,12 +1,11 @@
 import Link from "next/link"
-import {links} from '../../data'
+import {link} from '../../data'
 
 const SubHeader = () => {
     return(
       <div> 
-        {links.map((item, index) => (
-            <Link key={index} href={item.href}>{item.label}</Link>
-        ))}
+        <Link className="fixed top-0 w-full bg-[#000D15] text-white font-thin opacity-100 pt-4 pl-7 font-['Aboreto']
+         hover:text-gray-300 transition-colors " href={link.href} >{link.text}</Link>
       </div>
      
     )
