@@ -1,4 +1,3 @@
-
 export type TeamMember = {
     name: string,
     desc: string,
@@ -13,5 +12,12 @@ export type GameMechanicCardProps = {
 export type ScrollDownButtonType = {
   text: string,
   navigateTo: string
+}
+
+export type DescriptionSectionProps = {
+    id: number;
+    imageUrl: string;
+    imageAlt: string;
+    text: string[];
 }
 
