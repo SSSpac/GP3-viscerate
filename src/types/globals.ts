@@ -3,3 +3,9 @@ export type TeamMember = {
     desc: string,
     photo: string
 }
+
+export type ScrollDownButtonType = {
+  text: string,
+  navigateTo: string
+}
+
