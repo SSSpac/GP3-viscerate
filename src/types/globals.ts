@@ -4,3 +4,9 @@ export type DescriptionSectionProps = {
     imageAlt: string;
     text: string[];
 }
+
+export type ScrollDownButtonType = {
+  text: string,
+  navigateTo: string
+}
+
