@@ -3,3 +3,9 @@ export type GameMechanicCardProps = {
   imageSrc: string;
   alt?: string;
 }
+
+export type ScrollDownButtonType = {
+  text: string,
+  navigateTo: string
+}
+
