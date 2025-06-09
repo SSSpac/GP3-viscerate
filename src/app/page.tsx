@@ -1,7 +1,9 @@
-import SubHeader from "@/components/SubHeader";
+
 
 export default function Home() {
   return (
+    <div>
+    
     <h1 className="text-logocolor font-aboreto">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam inventore
       modi consectetur, dicta iste dolores assumenda sint sit voluptatibus optio
@@ -16,5 +18,6 @@ export default function Home() {
       Saepe minus praesentium laboriosam!
      
     </h1>
+    </div>
   );
 }
