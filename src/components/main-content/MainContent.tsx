@@ -30,7 +30,7 @@ const MainContent = () => {
         <ImageButton
           src="/icons/new.learn-more.png"
           alt="Learn More"
-          href="google.com"
+          href="/game"
           width={250}
           height={60} onClick={undefined}          
         />
