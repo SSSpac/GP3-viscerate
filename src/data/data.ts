@@ -1,4 +1,4 @@
-export const features = [
+export type features = [
   {
     title: "Game mechanic example1",
     imageSrc: "/images/GM-example1.jpg",

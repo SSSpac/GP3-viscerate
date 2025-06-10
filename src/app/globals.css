@@ -29,5 +29,6 @@ body {
   background: var(--background);
   color: var(--textcolor);
   display:flex;
+  background-color: var(--background);
   flex-direction: column;
 }

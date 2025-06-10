@@ -1,7 +1,10 @@
 import GameCard from '@/components/GameCard';
+import Hpheader from '@/components/hp-header';
 
 export default function Home() {
   return (
+    <div>
+      <Hpheader />
     <main className="bg-[var(--background)] min-h-screen flex flex-col items-center justify-center py-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <GameCard
@@ -21,5 +24,6 @@ export default function Home() {
         />
       </div>
     </main>
+    </div>
   );
 }
