@@ -8,6 +8,10 @@ export type GameMechanicCardProps = {
   imageSrc: string;
   alt?: string;
 }
+export type LinkItem = {
+  href: string;
+  text:string;
+};
 
 export type ScrollDownButtonType = {
   text: string,
