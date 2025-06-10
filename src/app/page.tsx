@@ -1,10 +1,11 @@
+import GameCard from '@/components/GameCard';
 import Hpheader from '@/components/hp-header';
 import MainContent from '@/components/main-content/MainContent';
-import GameCard from '@/components/GameCard';
 
 export default function Home() {
   return (
     <div>
+
       <Hpheader />      
       <MainContent />
       <main className="bg-[var(--background)] min-h-screen flex flex-col items-center justify-center py-10">
@@ -29,3 +30,5 @@ export default function Home() {
     </div>
   );
 }
+
+      
