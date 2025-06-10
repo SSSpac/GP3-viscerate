@@ -1,6 +1,8 @@
+
 import Hpheader from '@/components/hp-header';
 import MainContent from '@/components/main-content/MainContent';
 import GameCard from '@/components/GameCard';
+
 
 export default function Home() {
   return (
@@ -11,19 +13,16 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <GameCard
             imageSrc="/images/GM-example1.jpg"
-            title="Game mechanic example1"
-          />
+            title="Game mechanic example1"/>
           <GameCard
             imageSrc="/images/GM-example2.jpg"
-            title="Game mechanic example2"
-          />
+            title="Game mechanic example2"/>
         </div>
 
         <div className="mt-6">
           <GameCard
             imageSrc="/images/GM-example3.jpg"
-            title="Game mechanic example3"
-          />
+            title="Game mechanic example3"/>
         </div>
       </main>
     </div>
