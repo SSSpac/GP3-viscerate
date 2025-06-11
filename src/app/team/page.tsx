@@ -7,7 +7,7 @@ function MemberBox({ name, desc, photo }: TeamMember) {
   return (
     <div className="flex flex-col items-center sm:flex-row w-full h-lg sm:even:flex-row-reverse gap-8">
       <div className="justify-center w-60 h-60 min-w-60 min-h-60 rounded-full bg-extraground">
-        <img className="w-full h-full rounded-full" src={photo}/>
+        <img className="w-full h-full rounded-full" src={photo} alt={name}/>
       </div>
       <div className="flex flex-col gap-8 align-middle justify-center items-center sm:items-start">
         <h1 className="text-4xl">{name}</h1>

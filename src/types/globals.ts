@@ -1,7 +1,9 @@
 export type TeamMember = {
     name: string,
     desc: string,
-    photo: string
+    photo: string,
+    role: string,
+    team: string
 }
 
 export type LinkItem = {
@@ -19,4 +21,3 @@ export type ScrollDownButtonType = {
   text: string,
   navigateTo: string
 }
-
