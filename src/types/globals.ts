@@ -24,4 +24,3 @@ export type DescriptionSectionProps = {
     imageAlt: string;
     text: string[];
 }
-
