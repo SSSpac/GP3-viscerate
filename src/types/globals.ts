@@ -3,6 +3,12 @@ export type TeamMember = {
     desc: string,
     photo: string
 }
+
+export type LinkItem = {
+  href: string;
+  text:string;
+};
+
 export type GameMechanicCardProps = {
   title: string;
   imageSrc: string;
