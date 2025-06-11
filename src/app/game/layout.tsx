@@ -4,7 +4,7 @@ export default function GameLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="p-10">
+    <div className="lg:p-10">
       {children}
     </div>
   );
