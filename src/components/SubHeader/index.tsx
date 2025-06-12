@@ -1,5 +1,5 @@
 import Link from "next/link"
-import {link} from '../../data'
+import {link} from '../../data/data'
 
 const SubHeader = () => {
     return(
