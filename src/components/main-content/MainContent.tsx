@@ -21,7 +21,7 @@ const MainContent = () => {
         <ImageButton
           src="/icons/new.download-now.png"
           alt="Download Game"
-          href="https://namatakahashi.itch.io/oo"
+          href="https://futuregames.itch.io/viscerate"
           width={250} 
           height={90} 
           onClick={() => {}} 
