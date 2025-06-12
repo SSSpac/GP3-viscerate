@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Aboreto, New_Rocker, Rubik_Dirt, Inter } from "next/font/google";
 import "./globals.css";
+import SubHeader from "@/components/SubHeader";
 
 const aboreto = Aboreto({
   variable: "--font-aboreto",
@@ -39,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${aboreto.variable} ${newRocker.variable} ${rubikDirt.variable} ${inter.variable}`}>
+        <SubHeader/>
         {children}
       </body>
     </html>

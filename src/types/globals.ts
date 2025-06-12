@@ -1,4 +1,3 @@
-
 export type TeamMember = {
     name: string,
     desc: string,
@@ -15,7 +14,6 @@ export type LinkItem = {
   text:string;
 };
 
-
 export type ScrollDownButtonType = {
   text: string,
   navigateTo: string
@@ -27,4 +25,3 @@ export type DescriptionSectionProps = {
     imageAlt: string;
     text: string[];
 }
-

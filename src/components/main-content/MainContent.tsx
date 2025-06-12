@@ -13,7 +13,7 @@ const MainContent = () => {
     width={250}
     height={140}
     priority
-    className="flex justify-between w-[90%] max-w-[400px] h-auto hover:opacity-90 transition-opacity"
+    className="flex justify-between w-[100%] max-w-[1000px] h-auto hover:opacity-90 transition-opacity"
   />
 </section>
 
@@ -21,7 +21,7 @@ const MainContent = () => {
         <ImageButton
           src="/icons/new.download-now.png"
           alt="Download Game"
-          href="https://namatakahashi.itch.io/oo"
+          href="https://futuregames.itch.io/viscerate"
           width={250} 
           height={90} 
           onClick={() => {}} 
@@ -30,7 +30,7 @@ const MainContent = () => {
         <ImageButton
           src="/icons/new.learn-more.png"
           alt="Learn More"
-          href="google.com"
+          href="/game"
           width={250}
           height={60} onClick={undefined}          
         />
