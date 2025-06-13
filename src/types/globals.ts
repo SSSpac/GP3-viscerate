@@ -1,3 +1,9 @@
+export type DescriptionSectionProps = {
+    id: number;
+    imageAlt: string;
+    text: string[];
+}
+
 export type TeamMember = {
     name: string,
     desc: string,
@@ -17,11 +23,4 @@ export type LinkItem = {
 export type ScrollDownButtonType = {
   text: string,
   navigateTo: string
-}
-
-export type DescriptionSectionProps = {
-    id: number;
-    imageUrl: string;
-    imageAlt: string;
-    text: string[];
 }
