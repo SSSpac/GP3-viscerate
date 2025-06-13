@@ -10,8 +10,8 @@ const MainContent = () => {
   <Image 
     src="/icons/VISCERATE.png"
     alt="VISCERATE"
-    width={250}
-    height={140}
+    width={1000}
+    height={40}
     priority
     className="flex justify-between w-[100%] max-w-[1000px] h-auto hover:opacity-90 transition-opacity"
   />
@@ -21,7 +21,7 @@ const MainContent = () => {
         <ImageButton
           src="/icons/new.download-now.png"
           alt="Download Game"
-          href="https://namatakahashi.itch.io/oo"
+          href="https://futuregames.itch.io/viscerate"
           width={250} 
           height={90} 
           onClick={() => {}} 
@@ -37,11 +37,9 @@ const MainContent = () => {
       </div>
 
       <section className="w-full max-w-[700px] text-center px-4">
-        <p className="text-gray-500 text-lg leading-relaxed">
-          Lorem ip Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna a
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna a
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna a
-            sum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <p className="text-[#858585] text-2xl leading-relaxed mt-8 mb-8">
+          Viscerate is a fast-paced first-person shooter blending roguelite mechanics with strategic depth and modular upgrades. Designed for intermediate to hardcore players, the game delivers an intense combat experience where every run is a fresh challenge. Players craft and customize powerful builds using a mix of modular weapons and strategic deck-building elements,
+           ensuring high replayability and tactical freedom. Basically a FPS and rougelike game with you just can't stop playing..
         </p>
       </section>
     </main>
