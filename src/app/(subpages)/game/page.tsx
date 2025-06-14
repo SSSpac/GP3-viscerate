@@ -1,7 +1,7 @@
-import ScrollDownButton from "../../components/ScrollDownButton";
-import FrameWrapper from "../../components/FrameWrapper";
-import DescriptionSection from "../../components/DescriptionSection";
-import { descriptionSectiondata } from "../../data/descriptionSection";
+import ScrollDownButton from "../../../components/ScrollDownButton";
+import FrameWrapper from "../../../components/FrameWrapper";
+import DescriptionSection from "../../../components/DescriptionSection";
+import { descriptionSectiondata } from "../../../data/descriptionSection";
 
 const GamePage = () => {
   return (
