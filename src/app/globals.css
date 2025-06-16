@@ -32,3 +32,19 @@ body {
   background-color: var(--background);
   flex-direction: column;
 }
+
+
+.page-transition {
+  animation: slideIn .60s ease-in;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
