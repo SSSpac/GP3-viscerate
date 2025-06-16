@@ -3,14 +3,18 @@ import GameCard from '@/components/GameCard';
 import Hpheader from '@/components/hp-header';
 import MainContent from '@/components/main-content/MainContent';
 import Image from 'next/image';
+import PageTransition from '@/components/Transition';
+
 
 export default function Home() {
   return (
-    <div>
+             <PageTransition>
 
+   <div>
       <Hpheader />      
       <MainContent />
-      <main className="bg-[var(--background)] min-h-screen flex flex-col items-center justify-center py-10">
+
+      <main className="bg-[var(--background)] min-h-screen flex flex-col items-center justify-center py-10 min-h-screen w-full overflow-x-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <GameCard
             imageSrc="/icons/GM-example1.png"
@@ -30,6 +34,8 @@ export default function Home() {
         </div>
       </main>
     </div>
+          </PageTransition>
+  
   );
 }
 
