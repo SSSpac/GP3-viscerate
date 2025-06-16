@@ -1,6 +1,8 @@
+'use client';
 import GameCard from '@/components/GameCard';
 import Hpheader from '@/components/hp-header';
 import MainContent from '@/components/main-content/MainContent';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -11,18 +13,18 @@ export default function Home() {
       <main className="bg-[var(--background)] min-h-screen flex flex-col items-center justify-center py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <GameCard
-            imageSrc="/images/GM-example1.jpg"
+            imageSrc="/icons/GM-example1.png"
             title="Game mechanic example1"
           />
           <GameCard
-            imageSrc="/images/GM-example2.jpg"
+            imageSrc="/icons/GM-example2.png"
             title="Game mechanic example2"
           />
         </div>
 
         <div className="mt-6">
           <GameCard
-            imageSrc="/images/GM-example3.jpg"
+            imageSrc="/icons/GM-example3.png"
             title="Game mechanic example3"
           />
         </div>
