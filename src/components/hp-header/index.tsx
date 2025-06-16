@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const HpHeader = () => {
     const [visible, setVisible] = useState(true);
