@@ -2,10 +2,17 @@
 import { useState } from "react";
 import { teamMembers } from "../../data/teamMembers";
 import { TeamMember } from "@/types/globals";
+import { AnimatePresence, motion } from "framer-motion";
 
 function MemberBox({ name, photo, role }: TeamMember) {
   return (
-    <div className="flex flex-col items-center sm:flex-row w-full h-lg sm:even:flex-row-reverse gap-5">
+    <motion.div
+      initial={{ opacity: 0, y: -5 }}
+      animate={{ opacity: 1, y: 0.4 }}
+      exit={{ opacity: 0, y: 10 }}
+      transition={{ duration: 0.6 }}
+      className="flex flex-col items-center sm:flex-row w-full h-lg sm:even:flex-row-reverse gap-5"
+    >
       <div className="justify-center w-32 md:w-60 aspect-square min-w-60 min-h-60 rounded-full bg-extraground overflow-hidden">
         <img
           className="w-full h-full object-cover object-center"
@@ -17,7 +24,7 @@ function MemberBox({ name, photo, role }: TeamMember) {
         <h1 className="text-xl md:text-3xl">{name}</h1>
         <p className="text-sm max-w-xs">{role}</p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -66,16 +73,31 @@ function Team() {
       </div>
 
       {/* Members */}
-      <div className="grid grid-cols-1 gap-8 w-full max-w-350 py-4 md:pt-8">
-        {filteredMembers.map((teamMember, index) => (
-          <MemberBox
-            key={index}
-            name={teamMember.name}
-            role={teamMember.role}
-            photo={teamMember.photo || "/team-members/fallback-member.png"}
-          />
-        ))}
-      </div>
+
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={selectedTeam}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+          variants={{
+            hidden: {},
+            visible: {
+              transition: { staggerChildren: 0.1 },
+            },
+          }}
+          className="grid grid-cols-1 gap-8 w-full max-w-350 py-4 md:pt-8"
+        >
+          {filteredMembers.map((member, index) => (
+            <MemberBox
+              key={member.name}
+              name={member.name}
+              role={member.role}
+              photo={member.photo || "/team-members/fallback-member.png"}
+            />
+          ))}
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 }
