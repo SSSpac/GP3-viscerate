@@ -8,9 +8,9 @@ function MemberBox({ name, photo, role }: TeamMember) {
   return (
     <motion.div
       initial={{ opacity: 0, y: -5 }}
-      animate={{ opacity: 1, y: 0.4 }}
+      animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 10 }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.8 }}
       className="flex flex-col items-center sm:flex-row w-full h-lg sm:even:flex-row-reverse gap-5"
     >
       <div className="justify-center w-32 md:w-60 aspect-square min-w-60 min-h-60 rounded-full bg-extraground overflow-hidden">
