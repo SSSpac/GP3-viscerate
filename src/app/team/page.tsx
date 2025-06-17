@@ -7,9 +7,10 @@ import { AnimatePresence, motion } from "framer-motion";
 function MemberBox({ name, photo, role }: TeamMember) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: -5 }}
+      initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      exit={{ opacity: 0, y: 30 }}
+      transition={{ duration: 0.5 }}
       className="flex flex-col items-center sm:flex-row w-full h-lg sm:even:flex-row-reverse gap-5 transition-transform duration-300 ease-in-out hover:scale-102"
     >
       <div className="justify-center w-48 md:w-60 aspect-square rounded-full bg-extraground overflow-hidden shadow transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-gray-700">
