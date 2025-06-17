@@ -1,6 +1,6 @@
 import SubHeader from "@/components/SubHeader";
 
-export default function SubPageLayout({
+export default function TeamLayout({
     children,
 }: {
     children: React.ReactNode;
