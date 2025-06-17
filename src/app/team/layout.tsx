@@ -1,14 +1,11 @@
-import SubHeader from "@/components/SubHeader";
-
 export default function TeamLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-    return (
-        <div>
-            <SubHeader />
-            {children}
-        </div>
-    );
+  return (
+    <div className="bg-[url('/team-members/bg-team.png')] bg-contain bg-repeat">
+      {children}
+    </div>
+  );
 }
