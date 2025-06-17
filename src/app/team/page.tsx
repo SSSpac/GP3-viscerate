@@ -73,7 +73,6 @@ function Team() {
       </div>
 
       {/* Members */}
-
       <AnimatePresence mode="wait">
         <motion.div
           key={selectedTeam}
