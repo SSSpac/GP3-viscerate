@@ -13,7 +13,7 @@ function MemberBox({ name, photo, role }: TeamMember) {
       transition={{ duration: 0.8 }}
       className="flex flex-col items-center sm:flex-row w-full h-lg sm:even:flex-row-reverse gap-5"
     >
-      <div className="justify-center w-32 md:w-60 aspect-square min-w-60 min-h-60 rounded-full bg-extraground overflow-hidden">
+      <div className="justify-center w-48 md:w-60 aspect-square rounded-full bg-extraground overflow-hidden">
         <img
           className="w-full h-full object-cover object-center"
           src={photo}
