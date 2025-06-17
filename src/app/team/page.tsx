@@ -11,9 +11,9 @@ function MemberBox({ name, photo, role }: TeamMember) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="flex flex-col items-center sm:flex-row w-full h-lg sm:even:flex-row-reverse gap-5"
+      className="flex flex-col items-center sm:flex-row w-full h-lg sm:even:flex-row-reverse gap-5 transition-transform duration-300 hover:scale-101"
     >
-      <div className="justify-center w-48 md:w-60 aspect-square rounded-full bg-extraground overflow-hidden">
+      <div className="justify-center w-48 md:w-60 aspect-square rounded-full bg-extraground overflow-hidden hover:shadow-md hover:shadow-gray-700">
         <img
           className="w-full h-full object-cover object-center"
           src={photo}
