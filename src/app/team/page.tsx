@@ -9,7 +9,7 @@ function MemberBox({ name, photo, role }: TeamMember) {
     <motion.div
       initial={{ opacity: 0, y: -5 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 10 }}
+      exit={{ opacity: 0, y: 0 }}
       transition={{ duration: 0.8 }}
       className="flex flex-col items-center sm:flex-row w-full h-lg sm:even:flex-row-reverse gap-5"
     >
