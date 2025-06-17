@@ -4,7 +4,7 @@ import { DescriptionSectionProps } from "@/types/globals";
 const DescriptionSection = ({id, imageAlt, text, index}: DescriptionSectionProps & {index: number}) => {
     const isImageRight = index% 2 === 0 ;
     return (
-        <section className={`${index === 1 ? 'mt-30' : 'mt-0'} -m-10`}>
+        <section className={`${index === 1 ? 'mt-30' : 'mt-0'}`}>
             <div id="content" className={`flex flex-row items-center gap-6   ${isImageRight ?  "" :  "flex-row-reverse"} `}>
                 <div className="flex justify-center mt-[70px] mb-[30px] w-full h-[200px] bg-cover bg-center
                 sm:w-[80%] sm:h-auto sm:my-[90px] sm:min-h-[300px] bg-[url(/descSec.png)]" aria-label={imageAlt}>
