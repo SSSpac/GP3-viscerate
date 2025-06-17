@@ -6,7 +6,7 @@ export default function TeamLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="bg-[url('/team-members/bg-team.png')] bg-contain bg-repeat">
+    <div className="bg-[url('/team-members/bg-team.jpeg')] bg-cover bg-fixed bg-no-repeat bg-top min-h-screen">
       <SubHeader />
       {children}
     </div>
