@@ -1,10 +1,13 @@
+import SubHeader from "@/components/SubHeader";
+
 export default function GameLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <div className="p-10">
+    <div>
+      <SubHeader />
       {children}
     </div>
   );
