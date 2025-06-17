@@ -20,7 +20,7 @@ function MemberBox({ name, desc, photo }: TeamMember) {
 function Team() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center p-7 gap-20 font-inter text-center">
+      <div className="flex flex-col items-center justify-center p-12 md:p-20 gap-20 font-inter text-center">
         <div className="flex flex-col items-center gap-10">
           <h1 className="text-4xl md:text-6xl">The Team</h1>
           <p className="text-xl text-center">A short description of the team and of the work/or work process</p>
