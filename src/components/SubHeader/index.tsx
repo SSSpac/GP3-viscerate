@@ -3,7 +3,7 @@ import {link} from '../../data/data'
 
 const SubHeader = () => {
     return(
-      <div className="top-0 w-full bg-[#000D15] text-white font-thin opacity-100 pt-4 pl-7 font-['Aboreto']
+      <div className="top-0 w-full bg-transparent text-white font-thin text-xl opacity-100 py-5 px-12 font-aboreto
          hover:text-gray-300 transition-colors "> 
         <Link  href={link.href} >{link.text}</Link>
       </div>

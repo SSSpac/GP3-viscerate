@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation';
 
 const HpHeader = () => {
     const [visible, setVisible] = useState(true);
@@ -23,13 +22,13 @@ const HpHeader = () => {
            return () => window.removeEventListener('scroll', controlHeader);
     }, [lastScrollY]);
     return (
-        <header className={`fixed top-0 w-full bg-[#000D15] text-white py-5 font-thin opacity-100 tracking-wide z-50 min-h-[80px] flex items-center md:justify-end justify-center transition-transform duration-300 ${ 
-            visible ? 'translate-y-0' : '-translate-y-full '}`}>
+        <header className={`fixed top-0 w-full bg-transparent text-white py-5 font-thin opacity-100 tracking-wide z-50 min-h-[80px] flex items-center md:justify-end justify-center transition-transform duration-300 ${ 
+            visible ? 'translate-y-0' : '-translate-y-full'}`}>
              <Link 
                 href="/team" 
-                className="md:relative md:right-28 font-['Aboreto'] text-xl hover:text-gray-300 transition-colors md:mr-7 tracking-wider"
+                className="md:relative md:right-28 font-aboreto text-xl hover:text-gray-300 transition-colors md:mr-7 uppercase"
              >
-                ABOUT DEVELOPERS
+                About developers
              </Link>
         </header>
     )
