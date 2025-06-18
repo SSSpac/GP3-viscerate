@@ -145,7 +145,7 @@ export const WebDevelopmentTeam: TeamMember[] = [
   {
     name: "Dimitar Manastirski",
     role: "Web Developer",
-    photo: "",
+    photo: "/team-members/web/web-dimitar.jpeg",
     desc: "description",
     team: "Web Development",
   },
