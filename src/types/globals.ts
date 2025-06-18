@@ -6,10 +6,10 @@ export type DescriptionSectionProps = {
 
 export type TeamMember = {
     name: string,
-    desc: string,
+    desc?: string,
     photo: string,
-    role?: string,
-    team?: string
+    role: string,
+    team?: string,
 }
 export type GameMechanicCardProps = {
   title: string;
