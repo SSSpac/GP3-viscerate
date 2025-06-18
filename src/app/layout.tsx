@@ -40,7 +40,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${aboreto.variable} ${newRocker.variable} ${rubikDirt.variable} ${inter.variable}`}>
-        <SubHeader/>
         {children}
       </body>
     </html>
