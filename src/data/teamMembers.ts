@@ -41,7 +41,7 @@ export const GameArtistTeam: TeamMember[] = [
   },
   {
     name: "Ira Aspelin",
-    role: "Character prop",
+    role: "Character prop specifically",
     photo: "",
     desc: "description",
     team: "Game Artist",
@@ -136,13 +136,6 @@ export const WebDevelopmentTeam: TeamMember[] = [
     team: "Web Development",
   },
   {
-    name: "May Sunktong",
-    role: "Web Developer",
-    photo: "",
-    desc: "description",
-    team: "Web Developer",
-  },
-  {
     name: "Srilatha Potnuru",
     role: "Web Developer",
     photo: "",
@@ -153,6 +146,13 @@ export const WebDevelopmentTeam: TeamMember[] = [
     name: "Dimitar Manastirski",
     role: "Web Developer",
     photo: "",
+    desc: "description",
+    team: "Web Development",
+  },
+  {
+    name: "May Sunktong",
+    role: "Web Developer",
+    photo: "/team-members/web/web-may.jpeg",
     desc: "description",
     team: "Web Development",
   },
