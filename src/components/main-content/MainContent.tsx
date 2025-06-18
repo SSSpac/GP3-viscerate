@@ -14,7 +14,7 @@ const MainContent = () => {
           width={1000}
           height={40}
           priority
-          className="flex justify-between w-full max-w-[1000px] h-auto drop-shadow-[0_0_2px_rgba(255,255,255,0.8)] transition-all duration-300 ease-in-out hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] py-12 md:pt-6 md:py-0"
+          className="flex justify-between w-full max-w-[1000px] h-auto drop-shadow-[0_0_2px_rgba(255,255,255,0.8)] transition-all duration-300 ease-in-out hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] py-12 md:py-0 pt-24 md:pt-0"
         />
       </section>
 
