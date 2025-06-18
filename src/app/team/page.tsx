@@ -35,6 +35,7 @@ const teams = [
   "Game Programmer",
   "ANIM & VFX",
   "Management",
+  "Web Development"
 ];
 
 function Team() {
