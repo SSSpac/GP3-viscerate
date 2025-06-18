@@ -21,7 +21,7 @@ function MemberBox({ name, photo, role }: TeamMember) {
         />
       </div>
       <div className="flex flex-col gap-3 align-middle justify-center items-center sm:items-start text-center sm:text-left">
-        <p className="text-xl md:text-3xl">{name}</p>
+        <p className="text-center text-xl md:text-3xl">{name}</p>
         <p className="text-sm max-w-xs">{role}</p>
       </div>
     </motion.div>
