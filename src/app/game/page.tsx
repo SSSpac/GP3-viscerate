@@ -2,6 +2,7 @@ import ScrollDownButton from "../../components/ScrollDownButton";
 import FrameWrapper from "../../components/FrameWrapper";
 import DescriptionSection from "../../components/DescriptionSection";
 import { descriptionSectiondata } from "../../data/descriptionSection";
+import Image from "next/image";
 
 const GamePage = () => {
   return (
