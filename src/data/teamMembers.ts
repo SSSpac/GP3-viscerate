@@ -127,56 +127,10 @@ export const ManagementTeam: TeamMember[] = [
   },
 ];
 
-export const WebDesigners: TeamMember[] = [
-  {
-    name: "Saifelislam Eisa",
-    role: "Web design",
-    photo: "/team-members/mock-member.png",
-    desc: "saifelislam.eisa@edu.futuregames.se",
-    team: "Web Crafters",
-  },
-  {
-    name: "Dimitar Manastirski",
-    role: "Web design",
-    photo: "/team-members/mock-member.png",
-    desc: "dimitar.manastirski@edu.futuregames.se",
-    team: "Web Crafters",
-  },
-  {
-    name: "Lava Sharif",
-    role: "Web design",
-    photo: "/team-members/mock-member.png",
-    desc: "mana.sharif@edu.futuregames.se",
-    team: "Web Crafters",
-  },
-  {
-    name: "May Sunktong",
-    role: "Web design",
-    photo: "/team-members/mock-member.png",
-    desc: "may.sunktong@edu.futuregames.se",
-    team: "Web Crafters",
-  },
-  {
-    name: "Bushra Rauf",
-    role: "Web design",
-    photo: "/team-members/mock-member.png",
-    desc: "bushra.rauf@edu.futuregames.se",
-    team: "Web Crafters",
-  },
-  {
-    name: "Srilatha Potnuru",
-    role: "Web design",
-    photo: "/team-members/mock-member.png",
-    desc: "srilatha.potnuru@edu.futuregames.se",
-    team: "Web Crafters",
-  },
-];
-
 export const teamMembers: TeamMember[] = [
   ...GameDesignTeam,
   ...GameArtistTeam,
   ...GameProgrammerTeam,
   ...AnimVfxTeam,
   ...ManagementTeam,
-  ...WebDesigners,
 ];
