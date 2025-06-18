@@ -1,4 +1,5 @@
 import { DescriptionSectionProps } from "@/types/globals";
+import { StaticImageData } from "next/image";
 
 
     export const descriptionSectiondata: DescriptionSectionProps[] = [
