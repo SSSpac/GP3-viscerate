@@ -21,7 +21,7 @@ const DescriptionSection = ({id, imageAlt, text, index, imageSrc}: DescriptionSe
         priority={index === 0}
       />
       <div
-        className={`text-sm text-extraground p-5 text-center bottom-12 relative 
+        className={`text-sm text-blue-200 font-bold p-2 text-center bottom-12 relative 
           sm:text-2xl sm:bottom-0 sm:text-left sm:p-0 sm:w-60 sm:flex flex-col justify-center 
           ${isImageRight ? "sm:left-[47%]" : "sm:right-[45%]"}`}
       >
