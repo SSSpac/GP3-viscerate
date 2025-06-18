@@ -1,11 +1,11 @@
 import Image from "next/image";
-import logo from "../../../public/images/title.png"; // Update this path as needed
+import logo from "../../../public/images/title.png";
 
 const Footer = () => {
     return (
         <footer className="bg-black text-white py-10 px-6">
             <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row md:justify-between gap-4">
-                
+
                 {/* Logo & Title */}
                 <div className="flex flex-col items-center">
                     <Image src={logo} alt="Viscreate Logo" className="w-28 h-auto" />
