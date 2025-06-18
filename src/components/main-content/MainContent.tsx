@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import ImageButton from "./ImageButton";
 
+
+
 const MainContent = () => {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-[url('/images/bg_3.png')] bg-cover bg-fixed bg-no-repeat bg-top min-h-screen px-6">

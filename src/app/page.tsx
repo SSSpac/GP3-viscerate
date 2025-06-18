@@ -9,22 +9,25 @@ export default function Home() {
       <div>
         <Hpheader />
         <MainContent />
-        <main className="bg-[var(--background)] min-h-screen flex flex-col items-center justify-center py-10 w-full overflow-x-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <h1 className="text-hero-body mt-8 font-bold text-center text-2xl">
+          Discover our game
+        </h1>
+        <main className="bg-background min-h-screen flex flex-col items-center justify-center py-10 w-full overflow-x-hidden">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10">
             <GameCard
-              imageSrc="/images/GM-example1.jpg"
-              title="Game mechanic example1"
+              imageSrc="/images-game-desc/Dark.png"
+              title="Goth Castle"
             />
             <GameCard
-              imageSrc="/images/GM-example2.jpg"
-              title="Game mechanic example2"
+              imageSrc="/images-game-desc/Grey.png"
+              title="Toxic Zone"
             />
           </div>
 
-          <div className="mt-6">
+          <div className="w-full mt-6 mb-6">
             <GameCard
-              imageSrc="/images/GM-example3.jpg"
-              title="Game mechanic example3"
+              imageSrc="/images-game-desc/Atomic.png"
+              title="Bio-Punk Horror"
             />
           </div>
         </main>
