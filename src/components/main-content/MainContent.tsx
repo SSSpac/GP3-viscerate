@@ -5,15 +5,16 @@ import ImageButton from "./ImageButton";
 
 const MainContent = () => {
   return (
-    <main className="bg-foreground min-h-screen flex flex-col items-center justify-center px-6">
-      <section className="flex justify-center items-center pt-48 pb-12 md:pb-0 md:pt-[180px] mb-15">
+    <main className="min-h-screen flex flex-col items-center justify-center bg-[url('/images/bg_3.png')] bg-cover bg-fixed bg-no-repeat bg-top min-h-screen px-6">
+
+      <section className="flex justify-center items-center">
         <Image
-          src="/icons/VISCERATE.png"
+          src="/images/title_2.png"
           alt="VISCERATE"
-          width={870}
+          width={1000}
           height={40}
           priority
-          className="flex justify-between w-[80%] md:w-[100%] max-w-[1000px] h-auto hover:opacity-90 transition-opacity"
+          className="flex justify-between w-full max-w-[1000px] h-auto drop-shadow-[0_0_2px_rgba(255,255,255,0.8)] transition-all duration-300 ease-in-out hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] py-12 md:pt-6 md:py-0"
         />
       </section>
 
@@ -24,8 +25,6 @@ const MainContent = () => {
           href="https://futuregames.itch.io/viscerate"
           width={300}
           height={100}
-          onClick={() => {}}
-          className="w-[70%] md:w-[100%]"
         />
 
         <ImageButton
@@ -34,16 +33,15 @@ const MainContent = () => {
           href="/game"
           width={300}
           height={100}
-          onClick={undefined}
         />
       </div>
 
-      <section className="w-full max-w-[700px] text-center p-2 md:p-12">
-        <p className="text-hero-body text-md md:text-lg leading-relaxed mt-8 mb-8 tracking-tighter md:tracking-tight">
+      <section className="w-full max-w-[700px] text-center p-2 md:pt-6">
+        <p className="text-hero-body text-md md:text-lg leading-relaxed tracking-tighter md:tracking-tight pt-4 md:pt-0">
           Viscerate is a fast-paced first-person shooter blending roguelite
           mechanics with strategic depth and modular upgrades. Designed for
           intermediate to hardcore players, the game delivers an intense combat
-          experience where every run is a fresh challenge. Players craft and
+          experience where every run is a fresh challenge. Players cragft and
           customize powerful builds using a mix of modular weapons and strategic
           deck-building elements, ensuring high replayability and tactical
           freedom. Basically a FPS and rougelike game with you just can't stop
