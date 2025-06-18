@@ -12,7 +12,7 @@ export default function Home() {
       <Hpheader />      
       <MainContent />
 
-      <main className="bg-[var(--background)] min-h-screen flex flex-col items-center justify-center py-10 min-h-screen w-full overflow-x-hidden">
+      <main className="bg-[var(--background)] min-h-screen flex flex-col items-center justify-center py-10 w-full overflow-x-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <GameCard
             imageSrc="/images/GM-example1.jpg"
