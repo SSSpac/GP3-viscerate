@@ -8,7 +8,7 @@ const ScrollDownButton = ({ text, navigateTo }: ScrollDownButtonType) => {
       className="flex flex-col justify-center items-center animate-bounce text-sm gap-2 z-10 font-inter"
     >
       {text}
-      <img src="/images-game-desc/triangle-icon.png" alt="triangle icon" width={40} />
+      <img src="/icons/triangle-icon.png" alt="triangle icon" width={40} />
     </Link>
   );
 };

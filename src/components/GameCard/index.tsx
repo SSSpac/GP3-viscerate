@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { GameMechanicCardProps } from "@/types/globals";
 
+
 const GameCard = ({ title, imageSrc, alt }:GameMechanicCardProps) => {
   return (
     <div className="p-4 w-full flex justify-center">

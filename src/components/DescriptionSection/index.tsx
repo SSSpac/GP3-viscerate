@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface SectionProps {
   index: number;
@@ -9,13 +10,18 @@ interface SectionProps {
 }
 
 const Section = ({ index, isImageRight, imageUrl, imageAlt, text }: SectionProps) => (
-  <section className={`min-h-screen ${index !== 1 ? 'mt-5' : 'mt-15'}`}>
+  <section className={`${index !== 2? '-mb-10' : 'mb-1'} mb-8`}>
     <div id="content" 
-         className={`flex flex-row items-center gap-2 md:gap-4 w-full max-w-[100%] overflow-x-hidden px-4 md:px-6 lg:px-8 min-h-screen 
+         className={`flex flex-row items-center gap-6 w-full max-w-[100%]  overflow-x-hidden lg:px-8
                     ${!isImageRight ? "flex-row-reverse" : ""}`}>
       <div 
-        className="flex justify-center w-full h-screen bg-center bg-no-repeat pt-[30px] sm:pt-0
-                   sm:w-[90%] mb-[50px] -mt-[30px] sm:h-screen sm:min-h-screen relative"
+        className="flex justify-center
+    w-full
+    h-[200px] pt-2 mb-0 bg-cover bg-center bg-no-repeat
+    sm:w-[80%] sm:h-auto sm:my-2 sm:min-h-[300px]
+    md:w-full md:h-[60vh] md:pt-2 md:mb-0 md:min-h-0
+    lg:w-[90%] lg:h-[60vh] lg:min-h-screen
+    relative"
 
         style={{ 
           backgroundImage: `url(${imageUrl})`,
@@ -26,9 +32,9 @@ const Section = ({ index, isImageRight, imageUrl, imageAlt, text }: SectionProps
         }}
         aria-label={imageAlt}
       >
-        <div className={` text-sm font-['Aboreto'] text-gray-200 font-bold p-30 text-center bottom-12 relative 
+        <div className={` text-sm font-['Aboreto'] text-gray-200 font-bold p-10 text-center bottom-12 relative 
           sm:text-2xl sm:bottom-0 sm:text-left sm:p-0 sm:w-60 sm:flex flex-col justify-center 
-          ${isImageRight ? "sm:left-[47%]" : "sm:right-[45%]"}`}
+          ${isImageRight ? "sm:left-[30%]" : "sm:right-[32%]"}`}
         >
           {text.map((t, i) => (
             <p key={i} className=" text-2xl font-medium">{t}</p>
@@ -43,7 +49,7 @@ const DescriptionSection = () => {
   const sections = [
     {
       isImageRight: false,
-      imageUrl: '/images-game-desc/smg.png',
+      imageUrl: '/images/bg_7.png',
       imageAlt: 'Combat System',
       text: ['Experience intense', 'close-quarters combat']
     },
