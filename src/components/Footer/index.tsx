@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "/Public/images/title_2.png";
+import logo from "/public/images/title_2.png";
 
 const Footer = () => {
     return (
