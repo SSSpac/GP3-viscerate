@@ -19,7 +19,7 @@ const MainContent = () => {
       </section>
       <div className="flex justify-center items-center gap-4 md:gap-6 w-auto max-w-[900px] flex-col md:flex-row">
         <ImageButton
-          src="/icons/download-now.png"
+          src="/icons/new.download-now.png"
           alt="Download Game"
           href="https://futuregames.itch.io/viscerate"
           width={300}
@@ -27,7 +27,7 @@ const MainContent = () => {
           target="_blank"
         />
         <ImageButton
-          src="/icons/learn-more.png"
+          src="/icons/new.learn-more.png"
           alt="Learn More"
           href="/game"
           width={300}
