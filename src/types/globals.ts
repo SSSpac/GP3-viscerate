@@ -10,6 +10,7 @@ export type TeamMember = {
     photo: string,
     role: string,
     team?: string,
+    favorites?: string,
 }
 export type GameMechanicCardProps = {
   title: string;

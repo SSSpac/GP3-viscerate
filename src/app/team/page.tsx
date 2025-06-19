@@ -30,12 +30,12 @@ function MemberBox({ name, photo, role }: TeamMember) {
 
 const teams = [
   "All",
-  "Game Design",
-  "Game Artist",
-  "Game Programmer",
+  "Game Designers",
+  "Game Artists",
+  "Game Programmers",
   "ANIM & VFX",
   "Management",
-  "Web Development"
+  "Web Developers"
 ];
 
 function Team() {
