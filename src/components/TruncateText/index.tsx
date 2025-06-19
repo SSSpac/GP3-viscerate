@@ -1,4 +1,5 @@
-"use client";
+"use client"
+
 import { useState } from "react";
 import { TruncateTextProps } from "../../types/globals";
 
@@ -9,15 +10,24 @@ export default function TruncateText({
 }: TruncateTextProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const words = text.split(/\s+/) || "No description";
+  const contentToProcess = text || "No description";
+
+  if (
+    (contentToProcess === "No description" && text === undefined) ||
+    text === null ||
+    text === ""
+  ) {
+    return <p className={className}>{contentToProcess}</p>;
+  }
+
+  const words = contentToProcess.split(/\s+/);
 
   const isLongerThanLimit = words.length > wordLimit;
 
   const truncatedText = isLongerThanLimit
     ? words.slice(0, wordLimit).join(" ") + "..."
-    : text;
-
-  const displayText = isExpanded ? text : truncatedText;
+    : contentToProcess;
+  const displayText = isExpanded ? contentToProcess : truncatedText;
 
   return (
     <p className={className}>
