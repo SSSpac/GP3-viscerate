@@ -1,7 +1,9 @@
+
 export type DescriptionSectionProps = {
     id: number;
     imageAlt: string;
     text: string[];
+    imageSrc: string;
 }
 
 export type TeamMember = {
