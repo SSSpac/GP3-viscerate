@@ -8,7 +8,7 @@ const Footer = () => {
 
                 {/* Logo & Title */}
                 <div className="flex flex-col items-center">
-                    <Image src={logo} alt="Viscreate Logo" className="w-28 h-auto" />
+                    <Image src={logo} alt="Viscreate Logo" className="w-48 h-auto " />
                     <h2 className="text-red-500 text-2xl font-bold mt-3">VISCERATE</h2>
                 </div>
 
