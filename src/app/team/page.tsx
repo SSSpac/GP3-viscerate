@@ -24,7 +24,7 @@ function MemberBox({ name, photo, role, desc }: TeamMember) {
       <div className="flex flex-col gap-2 align-middle justify-center items-center sm:items-start text-center sm:text-left">
         <p className="text-center text-xl md:text-3xl">{name}</p>
         <p className="text-sm max-w-xs italic">{role}</p>
-        <TruncateText text={desc} wordLimit={15} className="text-sm max-w-xs text-gray-300" />
+        <TruncateText text={desc} wordLimit={20} className="text-sm max-w-xs text-gray-300" />
       </div>
     </motion.div>
   );
