@@ -2,6 +2,7 @@ import GameCard from "@/components/GameCard";
 import Hpheader from "@/components/hp-header";
 import MainContent from "@/components/main-content/MainContent";
 import PageTransition from "@/components/Transition";
+import Image from "next/image";
 
 export default function Home() {
   return (

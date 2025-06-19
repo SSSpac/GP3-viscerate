@@ -4,6 +4,7 @@ import { teamMembers } from "../../data/teamMembers";
 import { TeamMember } from "@/types/globals";
 import { AnimatePresence, motion } from "framer-motion";
 import TruncateText from "../../components/TruncateText";
+import Image from "next/image";
 
 function MemberBox({ name, photo, role, desc }: TeamMember) {
   return (

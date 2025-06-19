@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface SectionProps {
   index: number;
@@ -9,7 +10,7 @@ interface SectionProps {
 }
 
 const Section = ({ index, isImageRight, imageUrl, imageAlt, text }: SectionProps) => (
-  <section className={`${index !== 1? '-mb-10' : 'mb-0'} mb-10`}>
+  <section className={`${index !== 2? '-mb-10' : 'mb-1'} mb-8`}>
     <div id="content" 
          className={`flex flex-row items-center gap-6 w-full max-w-[100%]  overflow-x-hidden lg:px-8
                     ${!isImageRight ? "flex-row-reverse" : ""}`}>
