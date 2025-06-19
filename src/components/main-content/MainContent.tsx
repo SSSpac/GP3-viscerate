@@ -3,6 +3,8 @@ import React from 'react';
 import Image from 'next/image';
 import ImageButton from './ImageButton';
 
+
+
 const MainContent = () => {
   return (
     <main className="bg-[#13222D] min-h-screen flex flex-col items-center justify-center">
@@ -17,24 +19,37 @@ const MainContent = () => {
   />
 </section>
 
-      <div className="flex justify-center items-center gap--50 w-auto max-w-[900px] ">
-        <ImageButton
-          src="/icons/new.download-now.png"
-          alt="Download Game"
+     
+      <div className="flex justify-center items-center gap--50 w-auto max-w-[900px]">
+        <a 
           href="https://futuregames.itch.io/viscerate"
-          width={250} 
-          height={90} 
-          onClick={() => {}} 
-        />
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:-translate-y-1 transition-all duration-300 ease-in-out group"
+        >
+          <Image
+            src="/icons/new.download-now.png"
+            alt="Download Game"
+            width={250}
+            height={90}
+            className="hover:opacity-80 transition-opacity cursor-pointer group-hover:brightness-110"
+          />
+        </a>
 
-        <ImageButton
-          src="/icons/new.learn-more.png"
-          alt="Learn More"
+        <a 
           href="/game"
-          width={250}
-          height={60} onClick={undefined}          
-        />
+          className="hover:-translate-y-1 transition-all duration-300 ease-in-out group"
+        >
+            <Image
+              src="/icons/new.learn-more.png"
+              alt="Learn More"
+              width={250}
+              height={60}
+              className="hover:opacity-80 transition-opacity cursor-pointer group-hover:brightness-110"
+            />
+        </a>
       </div>
+  
 
       <section className="w-full max-w-[700px] text-center px-4">
         <p className="text-[#858585] text-2xl leading-relaxed mt-8 mb-8">
