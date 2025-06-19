@@ -26,6 +26,7 @@ const MainContent = () => {
           href="https://futuregames.itch.io/viscerate"
           width={300}
           height={100}
+          target="_blank"
         />
         <ImageButton
           src="/icons/new.learn-more.png"
@@ -33,6 +34,7 @@ const MainContent = () => {
           href="/game"
           width={300}
           height={100}
+          target="_self"
         />
       </div>
       <section className="w-full max-w-[700px] text-center p-2 md:pt-6">
