@@ -1,6 +1,6 @@
 const FrameWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="relative border-double border-4 border-extraground p-1 w-full h-full my-9">
+    <div className="relative  border-4 border-extraground p-1 w-[80%] h-[90%] my-9">
       <img
         src="/images-game-desc/gem.png"
         alt="gem"

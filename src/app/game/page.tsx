@@ -1,19 +1,18 @@
 import ScrollDownButton from "../../components/ScrollDownButton";
 import FrameWrapper from "../../components/FrameWrapper";
 import DescriptionSection from "../../components/DescriptionSection";
-import { descriptionSectiondata } from "../../data/descriptionSection";
 import Image from "next/image";
 
 const GamePage = () => {
   return (
     <>
-      <section className="mb-50 w-full h-full relative font-inter">
-        <div className="md:w-[80%] h-[70vh] md:h-[80vh] w-full">
+         <section className="mb-30 w-[100%] h-full relative font-inter">
+        <div className="">
           <FrameWrapper>
             <img
-              src="/images-game-desc/Weixin2.png"
-              alt=""
-              className="w-full h-full object-cover"
+              src="/images/bg_9.png"
+              alt="mock image"
+              className="max-w-full max-h-full object-contain"
             />
           </FrameWrapper>
         </div>
@@ -21,19 +20,19 @@ const GamePage = () => {
           <h1 className="md:text-3xl lg:text-5xl p-2">
           
           </h1>
-          <h4 className="text-sm md:text-xl lg:text-2xl text-white font-bold">
+          <div className="w-full pt-100 flex items-center">
+          <h4 className="font-['Aboreto'] text-sm md:text-xl lg:text-2xl font-bold">
             Grid Upgrade System – Players can drag and drop upgrade modules into weapon slots, dynamically affecting gameplay.
-Upgrade Modules – 5–10.
+            Upgrade Modules – 5–10.
           </h4>
+          </div>
         </div>
         <div className="absolute -bottom-30 md:-bottom-18 left-1/2 transform -translate-x-1/2 z-10">
           <ScrollDownButton text="Scroll for more info" navigateTo="content" />
         </div>
       </section>
      <section>
-        {descriptionSectiondata.map((section, index) => (
-          <DescriptionSection key={section.id} {...section} index={index + 1} />
-        ))}
+      <DescriptionSection />
       </section>
     </>
   );
