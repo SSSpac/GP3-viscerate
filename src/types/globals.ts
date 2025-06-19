@@ -6,10 +6,11 @@ export type DescriptionSectionProps = {
 
 export type TeamMember = {
     name: string,
-    desc: string,
+    desc?: string,
     photo: string,
-    role?: string,
-    team?: string
+    role: string,
+    team?: string,
+    favorites?: string,
 }
 export type GameMechanicCardProps = {
   title: string;
@@ -25,4 +26,11 @@ export type LinkItem = {
 export type ScrollDownButtonType = {
   text: string,
   navigateTo: string
+}
+
+
+export interface TruncateTextProps {
+  text: string | undefined | null;
+  wordLimit?: number;
+  className?: string;
 }
