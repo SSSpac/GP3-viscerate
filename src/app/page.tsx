@@ -11,9 +11,11 @@ export default function Home() {
    <div>
       <Hpheader />      
       <MainContent />
+
       <h1 className="text-[#858585] mt-8 font-bold text-center text-2xl"> Discover our game </h1>
       <main className="bg-[var(--background)] min-h-screen flex flex-col items-center justify-center py-10 w-full overflow-x-hidden">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+
           <GameCard
             imageSrc="/images-game-desc/Dark.png"
             title="Goth Castle"
@@ -37,4 +39,3 @@ export default function Home() {
   );
 }
 
-      
