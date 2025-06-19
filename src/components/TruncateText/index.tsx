@@ -9,7 +9,7 @@ export default function TruncateText({
 }: TruncateTextProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const words = text.split(/\s+/);
+  const words = text.split(/\s+/) || "No description";
 
   const isLongerThanLimit = words.length > wordLimit;
 
