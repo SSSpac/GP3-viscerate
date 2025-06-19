@@ -20,8 +20,8 @@ const GamePage = () => {
           <h1 className="md:text-3xl lg:text-5xl p-2">
           
           </h1>
-          <div className="w-full pt-100 flex items-center">
-          <h4 className="font-['Aboreto'] text-sm md:text-xl lg:text-2xl font-bold">
+          <div className="w-full flex items-center">
+          <h4 className="font-['Aboreto'] text-sm md:text-xl lg:text-xl ">
             Grid Upgrade System – Players can drag and drop upgrade modules into weapon slots, dynamically affecting gameplay.
             Upgrade Modules – 5–10.
           </h4>

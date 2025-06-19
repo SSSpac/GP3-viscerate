@@ -9,13 +9,13 @@ interface SectionProps {
 }
 
 const Section = ({ index, isImageRight, imageUrl, imageAlt, text }: SectionProps) => (
-  <section className={`min-h-screen ${index !== 1 ? 'mt-5' : 'mt-15'}`}>
+  <section className={`${index !== 0? '' : ''}`}>
     <div id="content" 
-         className={`flex flex-row items-center gap-2 md:gap-4 w-full max-w-[100%] overflow-x-hidden px-4 md:px-6 lg:px-8 min-h-screen 
+         className={`flex flex-row items-center gap-6 w-full max-w-[100%]  overflow-x-hidden px-4 md:px-6 lg:px-8
                     ${!isImageRight ? "flex-row-reverse" : ""}`}>
       <div 
-        className="flex justify-center w-full h-screen bg-center bg-no-repeat pt-[30px] sm:pt-0
-                   sm:w-[90%] mb-[50px] -mt-[30px] sm:h-screen sm:min-h-screen relative"
+        className="flex justify-center w-full h-[60vh] bg-cover bg-center bg-no-repeat pt-[20px] 
+                   sm:w-[90%] mb-[30px] sm:h-[60vh] sm:min-h-screen relative"
 
         style={{ 
           backgroundImage: `url(${imageUrl})`,
@@ -43,7 +43,7 @@ const DescriptionSection = () => {
   const sections = [
     {
       isImageRight: false,
-      imageUrl: '/images-game-desc/smg.png',
+      imageUrl: '/images/bg_7.png',
       imageAlt: 'Combat System',
       text: ['Experience intense', 'close-quarters combat']
     },
