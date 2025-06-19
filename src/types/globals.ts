@@ -27,3 +27,10 @@ export type ScrollDownButtonType = {
   text: string,
   navigateTo: string
 }
+
+
+export interface TruncateTextProps {
+  text: string | undefined;
+  wordLimit?: number;
+  className?: string;
+}

@@ -3,8 +3,9 @@ import { useState } from "react";
 import { teamMembers } from "../../data/teamMembers";
 import { TeamMember } from "@/types/globals";
 import { AnimatePresence, motion } from "framer-motion";
+import TruncateText from "../../components/TruncateText";
 
-function MemberBox({ name, photo, role }: TeamMember) {
+function MemberBox({ name, photo, role, desc }: TeamMember) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 0 }}
@@ -20,9 +21,10 @@ function MemberBox({ name, photo, role }: TeamMember) {
           alt={name}
         />
       </div>
-      <div className="flex flex-col gap-3 align-middle justify-center items-center sm:items-start text-center sm:text-left">
+      <div className="flex flex-col gap-2 align-middle justify-center items-center sm:items-start text-center sm:text-left">
         <p className="text-center text-xl md:text-3xl">{name}</p>
-        <p className="text-sm max-w-xs">{role}</p>
+        <p className="text-sm max-w-xs italic">{role}</p>
+        <TruncateText text={desc} wordLimit={15} className="text-sm max-w-xs text-gray-300" />
       </div>
     </motion.div>
   );
@@ -35,7 +37,7 @@ const teams = [
   "Game Programmers",
   "ANIM & VFX",
   "Management",
-  "Web Developers"
+  "Web Developers",
 ];
 
 function Team() {
@@ -92,6 +94,7 @@ function Team() {
               key={member.name}
               name={member.name}
               role={member.role}
+              desc={member.desc}
               photo={member.photo || "/team-members/fallback-member.png"}
             />
           ))}
