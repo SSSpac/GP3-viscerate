@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "/Public/images/title.png";
+import logo from "/Public/images/title_2.png";
 
 const Footer = () => {
     return (
@@ -24,25 +24,30 @@ const Footer = () => {
 
                       {/* Navigation Links */}
                 <div className="flex flex-col items-center md:items-start">
-                    <h3 className="text-lg font-semibold text-red-500 mb-3">Social Media</h3>
-                    <ul className="space-y-2">
-                        <li><a href="/Twitter" className="hover:text-red-500 transition">Twitter</a></li>
-                        <li><a href="/youtube" className="hover:text-red-500 transition">youtube</a></li>
-                        <li><a href="/Instagram" className="hover:text-red-500 transition">Instagram</a></li>
-                    </ul>
+                    <h3 className="text-lg font-semibold text-red-500 mb-3">Location</h3>
+                    <p className="space-y-2">
+                        <p className="hover:text-red-500 transition">Address</p>
+                    </p>
                 </div>
 
                 {/* Contact Details */}
                 <div className="flex flex-col items-center md:items-end">
-                    <h3 className="text-lg font-semibold text-red-500 mb-3">Contact</h3>
-                    <p>📞 Phone: +123 456 7890</p>
-                    <p>📧 Email: contact@viscreate.com</p>
+                    <h3 className="text-lg font-semibold text-red-500 mb-3">Contact Us</h3>
+                    <p>📞 Phone: 08 33 60 36</p>
+                    <p>📧 Email: info@futuregames.se</p>
+                    <p className='font-semibold text-red-500'>Webdevelopers</p>
+                    <p>Bushra Rauf</p>
+                    <p>Dimitar Manastirski</p>
+                    <p>May Sunktong</p>
+                    <p>Sirilatha Potnuru</p>
+                    <p>Lava Sharif</p>
+                    <p>Saifelislam Eisa</p>
                 </div>
             </div>
 
             {/* Bottom Section */}
             <div className="mt-8 text-center text-sm border-t border-gray-700 pt-4">
-                <p>&copy; 2025 Viscreate. All Rights Reserved.</p>
+                <p>&copy; 2025 Viscerate. All Rights Reserved.</p>
             </div>
         </footer>
     );
