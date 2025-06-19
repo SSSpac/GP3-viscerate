@@ -6,11 +6,12 @@ html {
 
 /* add more colors as wish */
 :root {
-  --background:#000D15 ;
-  --foreground:#13222D ;
-  --extraground: #CBC6BA;
-  --logocolor: #7C691C;
+  --background: #000d15;
+  --foreground: #13222d;
+  --extraground: #cbc6ba;
+  --logocolor: #7c691c;
   --textcolor: white;
+  --text-hero: #858585;
 }
 
 @theme inline {
@@ -19,6 +20,7 @@ html {
   --color-extraground: var(--extraground);
   --color-logocolor: var(--logocolor);
   --color-base: var(--textcolor);
+  --color-hero-body: var(--text-hero);
   --font-aboreto: var(--font-aboreto);
   --font-newrocker: var(--font-newrocker);
   --font-rubikdirt: var(--font-rubikdirt);
@@ -28,14 +30,13 @@ html {
 body {
   background: var(--background);
   color: var(--textcolor);
-  display:flex;
+  display: flex;
   background-color: var(--background);
   flex-direction: column;
 }
 
-
 .page-transition {
-  animation: slideIn .60s ease-in;
+  animation: slideIn 0.6s ease-in;
 }
 
 @keyframes slideIn {

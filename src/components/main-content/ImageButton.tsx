@@ -7,21 +7,21 @@ interface ImageButtonProps {
   href: string;
   width: number;
   height: number;
+  target: string;
   onClick?: () => void;
   className?: string;
 }
 
 const ImageButton: React.FC<ImageButtonProps> = 
-({ src, alt, href, width, height, onClick }) => {
+({ src, alt, href, width, height, target, onClick }) => {
   return (
-    <Link href={href}>
+    <Link href={href} target={target}>
       <Image
         src={src}
         alt={alt}
         width={width}
         height={height}
         onClick={onClick}
-       
       />
     </Link>
   )
