@@ -30,7 +30,7 @@ export type ScrollDownButtonType = {
 
 
 export interface TruncateTextProps {
-  text: string | undefined;
+  text: string;
   wordLimit?: number;
   className?: string;
 }
