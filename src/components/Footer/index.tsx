@@ -26,7 +26,7 @@ const Footer = () => {
                 <div className="flex flex-col items-center md:items-start">
                     <h3 className="text-lg font-semibold text-red-500 mb-3">Location</h3>
                     <div className="space-y-2">
-                        <p className="hover:text-red-500 transition">Hammarby Fabriksväg 61, Stockholm</p>
+                        <p className="">Hammarby Fabriksväg 61, Stockholm</p>
                     </div>
                 </div>
 
