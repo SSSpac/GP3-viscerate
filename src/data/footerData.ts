@@ -9,51 +9,28 @@ export const footerContactDetails: FooterContactDetails = {
 export const footerDevelopersList: Developers[] = [
       {
         id: 1,
-        name: "Lava Sharif",
-        linkedin: "https://www.linkedin.com/in/lava-sharif-24a400323/",
-        icon: "/icons/linkedin.png",
-        github: "https://github.com/Lvhacker1",
-        giticon: "/icons/github.png",
+        name: "Bushra Rauf",
       },
       {
         id: 2,
-        name: "Srilatha Potnuru",
-        linkedin: "https://www.linkedin.com/in/sirilatha-potnuru/",
-        icon: "/icons/linkedin.png",
-        github: "https://github.com/sirilatha",
-        giticon: "/icons/github.png",
+        name: "Dimitar Manastirski",
+       
       },
       {
         id: 3,
-        name: "Dimitar Manastirski",
-        linkedin: "https://www.linkedin.com/in/dimitar-manastirski/",
-        icon: "/icons/linkedin.png",
-        github: "https://github.com/Manastirski",
-        giticon: "/icons/github.png",
+        name: "May Sunktong",
       },
       {
         id: 4,
-        name: "May Sunktong",
-        linkedin: "https://www.linkedin.com/in/may-sunktong/",
-        icon: "/icons/linkedin.png",
-        github: "https://github.com/MaySunktong",
-        giticon: "/icons/github.png",
+        name: "Lava Sharif",
       },
       {
-        id: 5,
-        name: "Bushra Rauf",
-        linkedin: "https://www.linkedin.com/in/bushra-rauf/",
-        icon: "/icons/linkedin.png",
-        github: "https://github.com/BushraRauf",
-        giticon: "/icons/github.png",
+         id: 5,
+        name: "Srilatha Potnuru",
       },
       {
         id: 6,
         name: "Saifelislam Eisa",
-        linkedin: "https://www.linkedin.com/in/saifelislam-eisa/",
-        icon: "/icons/linkedin.png",
-        github: "https://github.com/SaifElislam",
-        giticon: "/icons/github.png",
       }
     ]
   
