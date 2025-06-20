@@ -1,4 +1,3 @@
-
 export type DescriptionSectionProps = {
     id: number;
     imageAlt: string;
@@ -35,4 +34,45 @@ export interface TruncateTextProps {
   text: string | undefined | null;
   wordLimit?: number;
   className?: string;
+}
+
+export type FooterLinks = {
+  links: { 
+    id: number;
+    label?: string;
+    href: string;
+    logo?: string;
+  }[];
+}
+
+export type Developers = {
+  id: number;
+  name: string;
+  linkedin?: string;
+  github?: string;
+  icon?: string;    
+  giticon?: string; 
+};
+
+export type FooterMedia = {
+  developers: {
+    title: string;
+    names: Developers[];
+  };
+};
+
+export type FooterContactDetails = {
+  title: string;
+  phone: string;
+  email: string;
+}
+
+export type FooterCopyright = {
+  copyright: string;
+}
+
+export type footerLocation = {
+  title: string;
+  Visitingaddress: string;
+  mapLink ?: string;
 }
