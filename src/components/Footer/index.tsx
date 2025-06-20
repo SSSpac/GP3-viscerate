@@ -1,26 +1,26 @@
 import Image from "next/image";
 import logo from "/public/images/title_2.png";
-import {footerContactDetails, footerLinks, footerDevelopersList, footerCopyright, footerLocation} from "@/data/footerData";
+import { footerContactDetails, footerLinks, footerDevelopersList, footerCopyright, footerLocation} from "@/data/footerData";
 
 const Footer = () => {
-  return (
-    <footer className="bg-black text-white py-10 px-6">
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    return (
+        <footer className="bg-black text-white py-10 px-6">
+            <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-        {/* Logo */}
-        <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-          <Image src={logo} alt="Viscerate Logo" className="w-48 h-auto"/>
-        </div>
+                {/* Logo */}
+                <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+                    <Image src={logo} alt="Viscreate Logo" className="w-48 h-auto "/>
+                </div>
 
-        {/* Quick Links */}
-        <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+                {/* Navigation Links */}
+                <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
           <h3 className="text-lg font-semibold text-red-500 mb-3">Quick Links</h3>
           <ul className="space-y-2">
             {footerLinks.links.map((link) => (
               <li key={link.id}>
                 <a
                   href={link.href}
-                  className="hover:text-red-500 transition flex items-center justify-center sm:justify-start gap-8"
+                  className="hover:text-red-500 transition flex items-center justify-center sm:justify-start gap-2"
                 >
                   {link.label ? (
                     link.label
@@ -75,7 +75,7 @@ const Footer = () => {
         <p>{footerCopyright.copyright}</p>
       </div>
     </footer>
-  );
+    );
 };
 
-export default Footer;
+export default Footer
