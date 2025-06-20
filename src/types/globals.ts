@@ -1,7 +1,9 @@
+
 export type DescriptionSectionProps = {
     id: number;
     imageAlt: string;
     text: string[];
+    imageSrc: string;
 }
 
 export type TeamMember = {
@@ -10,6 +12,7 @@ export type TeamMember = {
     photo: string,
     role: string,
     team?: string,
+    favorites?: string,
 }
 export type GameMechanicCardProps = {
   title: string;
@@ -25,4 +28,11 @@ export type LinkItem = {
 export type ScrollDownButtonType = {
   text: string,
   navigateTo: string
+}
+
+
+export interface TruncateTextProps {
+  text: string | undefined | null;
+  wordLimit?: number;
+  className?: string;
 }

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+
 interface LogoLinkProps {
   src: string;
   alt: string;
