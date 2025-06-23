@@ -1,55 +1,78 @@
 import Image from "next/image";
 import logo from "/public/images/title_2.png";
+import { footerContactDetails, footerLinks, footerDevelopersList, footerCopyright, footerLocation, footerMedia} from "@/data/footerData";
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white py-10 px-6">
-            <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row md:justify-between gap-4">
-
-                {/* Logo & Title */}
-                <div className="flex flex-col items-center">
-                    <Image src={logo} alt="Viscreate Logo" className="w-48 h-auto " />
-                    <h2 className="text-red-500 text-2xl font-bold mt-3">VISCERATE</h2>
-                </div>
-
-                {/* Navigation Links */}
-                <div className="flex flex-col items-center md:items-start">
-                    <h3 className="text-lg font-semibold text-red-500 mb-3">Quick Links</h3>
-                    <ul className="space-y-2">
-                        <li><a href="/" className="hover:text-red-500 transition">Home</a></li>
-                        <li><a href="/game" className="hover:text-red-500 transition">Game</a></li>
-                        <li><a href="/team" className="hover:text-red-500 transition">Team</a></li>
-                    </ul>
-                </div>
-
-                      {/* Navigation Links */}
-                <div className="flex flex-col items-center md:items-start">
-                    <h3 className="text-lg font-semibold text-red-500 mb-3">Location</h3>
-                    <div className="space-y-2">
-                        <p className="">Hammarby Fabriksväg 61, Stockholm</p>
-                    </div>
-                </div>
-
-                {/* Contact Details */}
-                <div className="flex flex-col items-center md:items-end">
-                    <h3 className="text-lg font-semibold text-red-500 mb-3">Contact Us</h3>
-                    <p>📞 Phone: 08 33 60 36</p>
-                    <p>📧 Email: info@futuregames.se</p>
-                    <p className='font-semibold text-red-500'>Webdevelopers</p>
-                    <p>Bushra Rauf</p>
-                    <p>Dimitar Manastirski</p>
-                    <p>May Sunktong</p>
-                    <p>Sirilatha Potnuru</p>
-                    <p>Lava Sharif</p>
-                    <p>Saifelislam Eisa</p>
-                </div>
+      <footer className="bg-black text-white py-10 px-6">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Logo */}
+        <div className="flex flex-col items-center sm:items-center text-center sm:text-left">
+            <Image src={logo} alt="Viscreate Logo" className="w-48 h-auto " />
+          </div>
+          {/* Navigation Links */}
+            <div className="flex flex-col items-center text-center">
+              <h3 className="text-lg font-semibold text-red-500 mb-3">{footerLinks.title}</h3>
+                <ul className="space-y-2">
+                  {footerLinks.links.map((link) => (
+                    <li key={link.id}>
+                      <a
+                        href={link.href}
+                        className="hover:text-red-500 transition flex items-center justify-center gap-2"
+                      >
+                        {link.label ? (
+                          link.label
+                        ) : (
+                          <Image src={link.logo!} alt="Logo" width={80} height={20} />
+                        )}
+                      </a>
+                    </li>
+                  ))}
+              </ul>
             </div>
 
-            {/* Bottom Section */}
-            <div className="mt-8 text-center text-sm border-t border-gray-700 pt-4">
-                <p>&copy; 2025 Viscerate. All Rights Reserved.</p>
-            </div>
-        </footer>
+        {/* Location */}
+        <div className="flex flex-col items-center sm:items-center text-center sm:text-left">
+          <h3 className="text-lg font-semibold text-red-500 mb-3">
+            {footerLocation.title}
+          </h3>
+          <p className="hover:text-red-500 transition text-sm max-w-xs">
+            {footerLocation.address}
+          </p>
+        </div>
+
+        {/* Contact & Developers */}
+        <div className="flex flex-col items-center sm:items-center text-center sm:text-center">
+          <h3 className="text-lg font-semibold text-red-500 mb-3">
+            {footerContactDetails.title}
+          </h3>
+          <p className="text-sm break-words w-full">
+            📞 <span className="font-medium">Phone:</span>{" "}
+            {footerContactDetails.phone}
+          </p>
+          <p className="text-sm break-all w-full">
+            📧 <span className="font-medium">Email:</span>{" "}
+            {footerContactDetails.email}
+          </p>
+
+          <h4 className="font-semibold text-red-500 mt-5 mb-2">
+            {footerMedia.developers.title}
+          </h4>
+          <ul className="space-y-1">
+            {footerDevelopersList.map((dev) => (
+              <li key={dev.id} className="text-sm">
+                {dev.name}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* Copyright */}
+      <div className="mt-10 text-center text-sm border-t border-gray-700 pt-4">
+        <p>{footerCopyright.copyright}</p>
+      </div>
+    </footer>
     );
 };
 
