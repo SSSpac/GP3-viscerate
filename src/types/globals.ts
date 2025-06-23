@@ -37,6 +37,7 @@ export interface TruncateTextProps {
 }
 
 export type FooterLinks = {
+  title: string;
   links: { 
     id: number;
     label?: string;

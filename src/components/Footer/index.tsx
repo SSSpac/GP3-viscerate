@@ -1,6 +1,6 @@
 import Image from "next/image";
 import logo from "/public/images/title_2.png";
-import { footerContactDetails, footerLinks, footerDevelopersList, footerCopyright, footerLocation} from "@/data/footerData";
+import { footerContactDetails, footerLinks, footerDevelopersList, footerCopyright, footerLocation, footerMedia} from "@/data/footerData";
 
 const Footer = () => {
     return (
@@ -12,7 +12,7 @@ const Footer = () => {
           </div>
           {/* Navigation Links */}
             <div className="flex flex-col items-center text-center">
-              <h3 className="text-lg font-semibold text-red-500 mb-3">Quick Links</h3>
+              <h3 className="text-lg font-semibold text-red-500 mb-3">{footerLinks.title}</h3>
                 <ul className="space-y-2">
                   {footerLinks.links.map((link) => (
                     <li key={link.id}>
@@ -56,7 +56,7 @@ const Footer = () => {
           </p>
 
           <h4 className="font-semibold text-red-500 mt-5 mb-2">
-            Web Developers
+            {footerMedia.developers.title}
           </h4>
           <ul className="space-y-1">
             {footerDevelopersList.map((dev) => (

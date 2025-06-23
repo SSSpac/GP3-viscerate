@@ -36,13 +36,14 @@ export const footerDevelopersList: Developers[] = [
   
 export const footerMedia: FooterMedia = {
     developers: {
-        title: "Developers",
+        title: "Web Developers",
         names: footerDevelopersList
 
     }
 };
 
 export const footerLinks: FooterLinks= {
+  title: "Quick Links",
     links: [
         {id: 1, label: "Home", href: "/", },
         {id: 2, label: "Game", href: "/game", },
