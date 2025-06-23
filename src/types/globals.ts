@@ -49,10 +49,6 @@ export type FooterLinks = {
 export type Developers = {
   id: number;
   name: string;
-  linkedin?: string;
-  github?: string;
-  icon?: string;    
-  giticon?: string; 
 };
 
 export type FooterMedia = {
