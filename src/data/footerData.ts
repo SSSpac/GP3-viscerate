@@ -53,7 +53,8 @@ export const footerLinks: FooterLinks= {
 
 export const footerLocation = {
   title: "Location",
-  address: "Hammarby Fabriksväg 61, 120 30 Stockholm"
+  address: "Hammarby Fabriksväg 61, 120 30 Stockholm",
+  mapLink: "https://maps.google.com/?q=Hammarby+Fabriksväg+61,+120+30+Stockholm"
 }
 
 export const footerCopyright: FooterCopyright = {
