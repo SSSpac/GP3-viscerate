@@ -4,37 +4,35 @@ import { footerContactDetails, footerLinks, footerDevelopersList, footerCopyrigh
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white py-10 px-6">
-            <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
-
-                {/* Logo */}
-                <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-                    <Image src={logo} alt="Viscreate Logo" className="w-48 h-auto "/>
-                </div>
-
-                {/* Navigation Links */}
-                <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-          <h3 className="text-lg font-semibold text-red-500 mb-3">Quick Links</h3>
-          <ul className="space-y-2">
-            {footerLinks.links.map((link) => (
-              <li key={link.id}>
-                <a
-                  href={link.href}
-                  className="hover:text-red-500 transition flex items-center justify-center sm:justify-start gap-2"
-                >
-                  {link.label ? (
-                    link.label
-                  ) : (
-                    <Image src={link.logo!} alt="Logo" width={80} height={20} />
-                  )}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+      <footer className="bg-black text-white py-10 px-6">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Logo */}
+        <div className="flex flex-col items-center sm:items-center text-center sm:text-left">
+            <Image src={logo} alt="Viscreate Logo" className="w-48 h-auto " />
+          </div>
+          {/* Navigation Links */}
+            <div className="flex flex-col items-center text-center">
+              <h3 className="text-lg font-semibold text-red-500 mb-3">Quick Links</h3>
+                <ul className="space-y-2">
+                  {footerLinks.links.map((link) => (
+                    <li key={link.id}>
+                      <a
+                        href={link.href}
+                        className="hover:text-red-500 transition flex items-center justify-center gap-2"
+                      >
+                        {link.label ? (
+                          link.label
+                        ) : (
+                          <Image src={link.logo!} alt="Logo" width={80} height={20} />
+                        )}
+                      </a>
+                    </li>
+                  ))}
+              </ul>
+            </div>
 
         {/* Location */}
-        <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+        <div className="flex flex-col items-center sm:items-center text-center sm:text-left">
           <h3 className="text-lg font-semibold text-red-500 mb-3">
             {footerLocation.title}
           </h3>
@@ -44,7 +42,7 @@ const Footer = () => {
         </div>
 
         {/* Contact & Developers */}
-        <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+        <div className="flex flex-col items-center sm:items-center text-center sm:text-center">
           <h3 className="text-lg font-semibold text-red-500 mb-3">
             {footerContactDetails.title}
           </h3>

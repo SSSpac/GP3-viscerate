@@ -56,5 +56,5 @@ export const footerLocation = {
 }
 
 export const footerCopyright: FooterCopyright = {
-  copyright: `©${new Date().getFullYear()} | VISCERATE Team | All rights reserved | Terms of use | Privacy policy`,
+  copyright: `©${new Date().getFullYear()} | VISCERATE Team | All rights reserved`,
 };
