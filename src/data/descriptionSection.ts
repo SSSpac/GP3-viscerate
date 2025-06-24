@@ -26,7 +26,7 @@ export const descriptionSectiondata: DescriptionSectionProps[] = [
         imageAlt: "Game image",
         text: [
             "Designed for those who seek mastery, Viscerate prioritizes fluid movement, rapid decision making, and layered combat strategies.", 
-            "Inspired by modern classics like Deadlink and Hades, it offers challenge without frustration and depth without compromise, turning every fight into a test of skill."
+            "Every encounter is a deliberate test of precision and control, delivering challenge without frustration and depth without compromise."
         ]
     },
 ]
