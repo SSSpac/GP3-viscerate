@@ -28,7 +28,7 @@ export const GameArtistTeam: TeamMember[] = [
   {
     name: "Max Strömdal Erikssojn",
     role: "Character Artist",
-    photo: "/team-members/game-artists/max.png",
+    photo: "/team-members/game-artists/Max.png",
     desc: " Character Artist, Art director Favorite game Elden Ring ",
     team: "Game Artists",
   },
@@ -84,7 +84,7 @@ export const AnimVfxTeam: TeamMember[] = [
   {
     name: "Jesper Turesson",
     role: "VFX Artist",
-    photo: "/team-members/animvfx/jesper.png",
+    photo: "/team-members/animvfx/Jesper.png",
     desc: "As the VFX artist on the team, I created real-time visual effects using Unreal Engine’s Niagara system, designing particle systems and custom materials for both environmental and gameplay elements. Destiny 2, Path of Exile, Leauge of Legends, Elden Ring, Space Marines 2 and The Finals.",
     team: "ANIM & VFX",
   },
