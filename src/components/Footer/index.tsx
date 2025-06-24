@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import logo from "/public/images/title_2.png";
 import { footerContactDetails, footerLinks, footerDevelopersList, footerCopyright, footerLocation, footerMedia} from "@/data/footerData";
 
@@ -8,7 +9,9 @@ const Footer = () => {
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo */}
         <div className="flex flex-col items-center sm:items-center text-center sm:text-left">
-            <Image src={logo} alt="Viscreate Logo" className="w-48 h-auto " />
+             <Link href="/">
+            <Image src={logo} alt="Viscreate Logo" className="w-48 h-auto cursor-pointer" />
+          </Link>
           </div>
           {/* Navigation Links */}
             <div className="flex flex-col items-center text-center">
