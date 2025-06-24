@@ -9,9 +9,9 @@ export default function Home() {
       <div>
         <Hpheader />
         <MainContent />
-        <h1 className="text-hero-body mt-8 font-bold text-center text-2xl">
+        <p className="text-hero-body mt-8 font-bold text-center text-2xl">
           Discover our game
-        </h1>
+        </p>
         <main className="bg-background min-h-screen flex flex-col items-center justify-center py-10 w-full overflow-x-hidden">
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10">
             <GameCard
