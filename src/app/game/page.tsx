@@ -1,10 +1,9 @@
 import ScrollDownButton from "../../components/ScrollDownButton";
 import FrameWrapper from "../../components/FrameWrapper";
 import DescriptionSection from "../../components/DescriptionSection";
-import { GameHeroProps } from "@/types/globals";
 import { gameHeroText } from "@/data/data";
 
-const GamePage = ({pageTitle = gameHeroText.pageTitle, paragraph = gameHeroText.paragraph }: GameHeroProps) => {
+const GamePage = ({pageTitle = gameHeroText.pageTitle, paragraph = gameHeroText.paragraph }) => {
   return (
     <>
          <section className="mb-30 w-[100%] h-full relative font-inter">
