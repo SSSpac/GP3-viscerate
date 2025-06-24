@@ -1,13 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+import { SectionProps } from '@/types/globals';
 
-interface SectionProps {
-  index: number;
-  isImageRight: boolean;
-  imageUrl: string;
-  imageAlt: string;
-  text: string[];
-}
 
 const Section = ({ index, isImageRight, imageUrl, imageAlt, text }: SectionProps) => (
   <section className={`${index !== 2? '-mb-10' : 'mb-1'} mb-8`}>

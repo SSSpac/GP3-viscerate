@@ -1,8 +1,10 @@
-export type DescriptionSectionProps = {
-    id: number;
-    imageAlt: string;
-    text: string[];
-    imageSrc: string;
+
+export type SectionProps = {
+  index: number;
+  isImageRight: boolean;
+  imageUrl: string;
+  imageAlt: string;
+  text: string[];
 }
 
 export type TeamMember = {
