@@ -3,6 +3,7 @@ import FrameWrapper from "../../components/FrameWrapper";
 import DescriptionSection from "../../components/DescriptionSection";
 import { gameHeroText } from "@/data/data";
 import GameHeroTextBlock from "@/components/GameHeroTextBlock";
+import Image from "next/image";
 
 const GamePage = () => {
   return (
