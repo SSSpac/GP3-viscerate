@@ -4,6 +4,7 @@ import DescriptionSection from "../../components/DescriptionSection";
 import { gameHeroText } from "@/data/data";
 import GameHeroTextBlock from "@/components/GameHeroTextBlock";
 import Image from "next/image";
+import { descriptionSectiondata } from "@/data/descriptionSection";
 
 const GamePage = () => {
   return (
@@ -26,7 +27,9 @@ const GamePage = () => {
         </div>
       </section>
      <section>
-      <DescriptionSection />
+              {descriptionSectiondata.map((section, index) => (
+          <DescriptionSection key={section.id} {...section} index={index + 1} />
+        ))}
       </section>
     </>
   );
