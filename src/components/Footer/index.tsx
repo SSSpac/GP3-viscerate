@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import logo from "/public/images/title_2.png";
 import { footerContactDetails, footerLinks, footerDevelopersList, footerCopyright, footerLocation, footerMedia} from "@/data/footerData";
 
@@ -8,7 +9,9 @@ const Footer = () => {
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo */}
         <div className="flex flex-col items-center sm:items-center text-center sm:text-left">
-            <Image src={logo} alt="Viscreate Logo" className="w-48 h-auto " />
+             <Link href="/">
+            <Image src={logo} alt="Viscreate Logo" className="w-48 h-auto cursor-pointer" />
+          </Link>
           </div>
           {/* Navigation Links */}
             <div className="flex flex-col items-center text-center">
@@ -36,9 +39,14 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-red-500 mb-3">
             {footerLocation.title}
           </h3>
-          <p className="hover:text-red-500 transition text-sm max-w-xs">
-            {footerLocation.address}
-          </p>
+           <a
+              href={footerLocation.mapLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-red-500 transition text-sm max-w-xs"
+            >
+              {footerLocation.address}
+            </a>
         </div>
 
         {/* Contact & Developers */}
@@ -48,13 +56,18 @@ const Footer = () => {
           </h3>
           <p className="text-sm break-words w-full">
             📞 <span className="font-medium">Phone:</span>{" "}
+            <a href={`tel:${footerContactDetails.phone}`}
+              className="hover:text-red-500">
             {footerContactDetails.phone}
+            </a>
           </p>
           <p className="text-sm break-all w-full">
             📧 <span className="font-medium">Email:</span>{" "}
+            <a href={`mailto:${footerContactDetails.email}`}
+              className="hover:text-red-500">
             {footerContactDetails.email}
+            </a>
           </p>
-
           <h4 className="font-semibold text-red-500 mt-5 mb-2">
             {footerMedia.developers.title}
           </h4>
