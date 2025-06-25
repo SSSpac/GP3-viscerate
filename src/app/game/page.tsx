@@ -3,21 +3,20 @@ import FrameWrapper from "../../components/FrameWrapper";
 import DescriptionSection from "../../components/DescriptionSection";
 import { gameHeroText } from "@/data/data";
 import GameHeroTextBlock from "@/components/GameHeroTextBlock";
-import Image from "next/image";
 
 const GamePage = () => {
   return (
     <>
          <section className="mb-30 w-[100%] h-full relative font-inter">
         <div className="">
-<FrameWrapper>
-  <div
-    className="w-full min-h-[230px] sm:h-[300px] md:h-[320px] lg:h-[590px] xl:h-[610px] bg-cover bg-center"
-    style={{ backgroundImage: "url('/images/21bg.jpeg')" }}
-    role="img"
-    aria-label="Hero image"
-  ></div>
-</FrameWrapper>
+        <FrameWrapper>
+          <div
+            className="w-full min-h-[230px] sm:h-[300px] md:h-[320px] lg:h-[590px] xl:h-[610px] bg-cover bg-center"
+            style={{ backgroundImage: "url('/images/bgImage.jpeg')" }}
+            role="img"
+            aria-label="Hero image"
+          ></div>
+        </FrameWrapper>
         </div>
         <div>
           <GameHeroTextBlock pageTitle={gameHeroText.pageTitle} paragraph={gameHeroText.paragraph} />
