@@ -12,7 +12,7 @@ const GamePage = () => {
         <FrameWrapper>
           <div
             className="w-full min-h-[230px] sm:h-[300px] md:h-[320px] lg:h-[590px] xl:h-[610px] bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/bgImage.jpeg')" }}
+            style={{ backgroundImage: "url('/images/bgimage.jpeg')" }}
             role="img"
             aria-label="Hero image"
           ></div>
