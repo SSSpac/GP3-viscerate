@@ -12,7 +12,7 @@ const GamePage = () => {
         <div className="">
         <FrameWrapper>
             <img
-              src="/images/bg-image.png"
+              src="/images/bg-image1.png"
               alt="mock image"
               className="max-w-full max-h-full object-contain"
             />
