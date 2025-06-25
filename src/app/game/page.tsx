@@ -3,6 +3,7 @@ import FrameWrapper from "../../components/FrameWrapper";
 import DescriptionSection from "../../components/DescriptionSection";
 import { gameHeroText } from "@/data/data";
 import GameHeroTextBlock from "@/components/GameHeroTextBlock";
+import { descriptionSectiondata } from "@/data/descriptionSection";
 
 const GamePage = () => {
   return (
@@ -25,7 +26,9 @@ const GamePage = () => {
         </div>
       </section>
      <section>
-      <DescriptionSection />
+              {descriptionSectiondata.map((section, index) => (
+          <DescriptionSection key={section.id} {...section} index={index + 1} />
+        ))}
       </section>
     </>
   );
