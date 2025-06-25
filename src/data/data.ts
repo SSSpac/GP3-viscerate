@@ -1,5 +1,5 @@
 
-import { LinkItem } from "../types/globals";
+import { GameHeroProps, LinkItem } from "../types/globals";
 
 export const link:LinkItem = {
   href: "/", 
@@ -23,3 +23,8 @@ export type features = [
   },
 ];
 
+
+export const gameHeroText: GameHeroProps = {
+  pageTitle: "Brutal Elegance in Motion",
+  paragraph: "Viscerate blends violent precision with strategic depth, pushing players to move with purpose and strike with intent. Every decision counts in a decaying world where mastery means survival."
+}

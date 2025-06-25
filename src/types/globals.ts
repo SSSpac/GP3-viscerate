@@ -73,3 +73,8 @@ export type footerLocation = {
   Visitingaddress: string;
   mapLink ?: string;
 }
+
+export type GameHeroProps = {
+  pageTitle: string;
+  paragraph: string;
+}
