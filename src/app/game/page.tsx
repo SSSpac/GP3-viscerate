@@ -10,12 +10,11 @@ const GamePage = () => {
          <section className="mb-30 w-[100%] h-full relative font-inter">
         <div className="">
         <FrameWrapper>
-          <div
-            className="w-full min-h-[230px] sm:h-[300px] md:h-[320px] lg:h-[590px] xl:h-[610px] bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/bgImage.jpeg')" }}
-            role="img"
-            aria-label="Hero image"
-          ></div>
+            <img
+              src="/images/bgImage.jpeg"
+              alt="mock image"
+              className="max-w-full max-h-full object-contain"
+            />
         </FrameWrapper>
         </div>
         <div>
