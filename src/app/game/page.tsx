@@ -14,7 +14,7 @@ const GamePage = () => {
             <Image
               src="/images/21bg.jpeg"
               alt="Hero image"
-              width={1200} height={800} sizes="100vw" style={{ width: '100%', height: 'auto' }}
+              width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }}
              />
           </FrameWrapper>
         </div>
