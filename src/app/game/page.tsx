@@ -3,6 +3,7 @@ import FrameWrapper from "../../components/FrameWrapper";
 import DescriptionSection from "../../components/DescriptionSection";
 import { gameHeroText } from "@/data/data";
 import GameHeroTextBlock from "@/components/GameHeroTextBlock";
+import Image from "next/image";
 
 const GamePage = () => {
   return (
@@ -10,11 +11,11 @@ const GamePage = () => {
          <section className="mb-30 w-[100%] h-full relative font-inter">
         <div className="">
           <FrameWrapper>
-            <img
+            <Image
               src="/images/21bg.jpeg"
-              alt="mock image"
-              className="max-w-full max-h-full object-contain"
-            />
+              alt="Hero image"
+              width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }}
+             />
           </FrameWrapper>
         </div>
         <div>
